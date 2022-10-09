@@ -1,0 +1,12 @@
+[run]
+source = countryguess
+command_line = -m pytest
+branch = True
+concurrency = multiprocessing
+
+[report]
+show_missing = True
+skip_covered = False
+
+[html]
+directory = /tmp/htmlcov

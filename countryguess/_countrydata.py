@@ -67,13 +67,13 @@ class CountryData:
     @functools.cached_property
     @_lazy_load
     def codes_iso2(self):
-        """Sequence of ISO 3166-2 country codes"""
+        """Sequence of ISO 3166-1 alpha-2 country codes"""
         return tuple(country['iso2'] for country in self._countries)
 
     @functools.cached_property
     @_lazy_load
     def codes_iso3(self):
-        """Sequence of ISO 3166-3 country codes"""
+        """Sequence of ISO 3166-1 alpha-3 country codes"""
         return tuple(country['iso3'] for country in self._countries)
 
     @functools.cached_property
@@ -90,13 +90,13 @@ class CountryData:
 
     @_lazy_load
     def _find_country(self, string):
-        # ISO 3166-2
+        # ISO 3166-1 alpha-2
         if len(string) == 2:
             info = self._find_country_by_code(string, self.codes_iso2)
             if info:
                 return info
 
-        # ISO 3166-3
+        # ISO 3166-1 alpha-3
         if len(string) == 3:
             info = self._find_country_by_code(string, self.codes_iso3)
             if info:
@@ -127,7 +127,7 @@ class CountryData:
         """
         Return country data as :class:`dict`
 
-        :param str country: Country name, ISO 3166-2 or ISO 3166-3 code
+        :param str country: Country name, 2-letter code or 3-letter code
 
             This is case-insensitive.
 

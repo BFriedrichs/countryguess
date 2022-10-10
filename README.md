@@ -53,9 +53,10 @@ method.
 ### Country Lookup
 
 Countries are identified by name, 2-letter code
-([ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2)) or 3-letter code
-([ISO 3166-3](https://en.wikipedia.org/wiki/ISO_3166-3)). All identifiers are
-matched case-insensitively.
+([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)) or
+3-letter code
+([ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)). All
+identifiers are matched case-insensitively.
 
 Names are matched with regular expressions that are stored in the JSON data. If
 that fails, fuzzy matching against ``name_short`` and ``name_official`` is done

@@ -35,5 +35,10 @@ setuptools.setup(
     python_requires='>=3.8',
     install_requires=[
     ],
+    package_data={
+        get_var('__project_name__'): [
+            '_countrydata.json',
+        ]
+    },
     entry_points={'console_scripts': ['countryguess = countryguess._cli:run']},
 )

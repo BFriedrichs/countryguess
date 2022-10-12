@@ -3,37 +3,16 @@ import functools
 import importlib.resources
 import json
 import re
-import threading
 
-_lock = threading.Lock()
-
-
-def _read_country_data(filepath):
-    try:
-        with open(filepath, 'r') as f:
-            country_list = json.load(f)
-
-    except OSError as e:
-        msg = e.strerror if e.strerror else str(e)
-        raise OSError(f'Cannot read {filepath}: {msg}')
-
-    except ValueError:
-        raise OSError(f'Invalid JSON: {filepath}')
-
-    else:
-        for info in country_list:
-            info['regex'] = re.compile(info['regex'], flags=re.IGNORECASE)
-
-        return country_list
+from . import __project_name__
 
 
-def _lazy_load(func):
+def _lazy_load_countries(func):
     @functools.wraps(func)
     def wrapper(self, *args, **kwargs):
         # Read country data from file unless we've already done that
         if not self._countries:
-            with _lock:
-                self._countries = _read_country_data(self._filepath)
+            self._countries = self._load_countries()
 
         # Call wrapped function transparently
         return func(self, *args, **kwargs)
@@ -42,20 +21,25 @@ def _lazy_load(func):
 
 
 class CountryData:
-    DEFAULT_FILEPATH = _countrydata_filepath = importlib.resources.path(
-        'countryguess',
-        '_countrydata.json',
-    )
-
     def __init__(self, filepath=None):
-        if filepath is not None:
-            self._filepath = filepath
-        else:
-            self._filepath = self.DEFAULT_FILEPATH
+        self._filepath = filepath
         self._countries = None
 
+    def _load_countries(self):
+        if self._filepath is not None:
+            stream = open(self._filepath, 'r')
+        else:
+            stream = importlib.resources.open_text(__project_name__, '_countrydata.json')
+
+        country_list = json.load(stream)
+
+        for info in country_list:
+            info['regex'] = re.compile(info['regex'], flags=re.IGNORECASE)
+
+        return country_list
+
     @property
-    @_lazy_load
+    @_lazy_load_countries
     def countries(self):
         """
         :class:`list` of country :class:`dict` objects
@@ -65,30 +49,30 @@ class CountryData:
         return [country.copy() for country in self._countries]
 
     @functools.cached_property
-    @_lazy_load
+    @_lazy_load_countries
     def codes_iso2(self):
         """Sequence of ISO 3166-1 alpha-2 country codes"""
         return tuple(country['iso2'] for country in self._countries)
 
     @functools.cached_property
-    @_lazy_load
+    @_lazy_load_countries
     def codes_iso3(self):
         """Sequence of ISO 3166-1 alpha-3 country codes"""
         return tuple(country['iso3'] for country in self._countries)
 
     @functools.cached_property
-    @_lazy_load
+    @_lazy_load_countries
     def names_official(self):
         """Sequence of official country names"""
         return tuple(country['name_official'] for country in self._countries)
 
     @functools.cached_property
-    @_lazy_load
+    @_lazy_load_countries
     def names_short(self):
         """Sequence of colloqial country names"""
         return tuple(country['name_short'] for country in self._countries)
 
-    @_lazy_load
+    @_lazy_load_countries
     def _find_country(self, string):
         # ISO 3166-1 alpha-2
         if len(string) == 2:
@@ -150,9 +134,8 @@ class CountryData:
         else:
             raise KeyError(country)
 
-    @_lazy_load
+    @_lazy_load_countries
     def __getattr__(self, attribute):
-        print('getting attr:', attribute)
         # Raise exception now, not when get_attribute() is called. This means
         # accessing `countrydata.iso4` raises AttributeError as it should.
         try:

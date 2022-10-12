@@ -1,79 +1,30 @@
 import copy
+import io
 import re
 from unittest.mock import Mock, call
 
 import pytest
 
-from countryguess import _countrydata
+from countryguess import __project_name__, _countrydata
 
 
-@pytest.mark.parametrize(
-    argnames='json_data, permissions, exp_result',
-    argvalues=(
-        (
-            '[{"name_short": "Sweden", "regex": "^sweden(?:ish|)$"}]',
-            None,
-            [{'name_short': 'Sweden', 'regex': re.compile('^sweden(?:ish|)$', flags=re.IGNORECASE)}],
-        ),
-        (
-            '[',
-            0o000,
-            OSError('Cannot read {filepath}: Permission denied'),
-        ),
-        (
-            '[',
-            None,
-            OSError('Invalid JSON: {filepath}'),
-        ),
-    ),
-    ids=lambda v: repr(v),
-)
-def test_read_country_data(json_data, permissions, exp_result, tmp_path):
-    filepath = tmp_path / 'countrydata.json'
-    filepath.write_text(json_data)
-    if permissions is not None:
-        filepath.chmod(permissions)
-
-    if isinstance(exp_result, Exception):
-        exp_msg = str(exp_result).format(filepath=filepath)
-        with pytest.raises(type(exp_result), match=rf'^{re.escape(exp_msg)}$'):
-            _countrydata._read_country_data(filepath)
-    else:
-        return_value = _countrydata._read_country_data(filepath)
-        assert return_value == exp_result
-
-
-def test_lazy_load(mocker):
+def test_lazy_load_countries(mocker):
     self = Mock(
         _countries=None,
         _filepath='path/to/countrydata',
     )
     mocks = Mock()
-    mocks.attach_mock(
-        self.func,
-        'func',
-    )
-    mocks.attach_mock(
-        mocker.patch(
-            'countryguess._countrydata._read_country_data',
-            return_value='mock country data',
-        ),
-        'read_country_data',
-    )
-    mocks.attach_mock(
-        mocker.patch.context_manager(_countrydata, '_lock'),
-        'lock',
-    )
+    mocks.attach_mock(self.func, 'func')
+    mocks.attach_mock(self._load_countries, '_load_countries')
+    self._load_countries.return_value = 'mock countries'
 
-    wrapped = _countrydata._lazy_load(self.func)
+    wrapped = _countrydata._lazy_load_countries(self.func)
     for _ in range(6):
         return_value = wrapped(self, 1, two='3')
 
     assert return_value is self.func.return_value
     assert mocks.mock_calls == [
-        call.lock.__enter__(),
-        call.read_country_data(self._filepath),
-        call.lock.__exit__(None, None, None),
+        call._load_countries(),
         call.func(self, 1, two='3'),
         call.func(self, 1, two='3'),
         call.func(self, 1, two='3'),
@@ -81,7 +32,7 @@ def test_lazy_load(mocker):
         call.func(self, 1, two='3'),
         call.func(self, 1, two='3'),
     ]
-    assert self._countries is mocks.read_country_data.return_value
+    assert self._countries is mocks._load_countries.return_value
 
 
 @pytest.mark.parametrize(
@@ -98,7 +49,7 @@ def test_lazy_load(mocker):
 def test_CountryData_lazy_loaded_property(property_name):
     countrydata = _countrydata.CountryData()
     assert countrydata._countries is None
-    print(getattr(countrydata, property_name))
+    getattr(countrydata, property_name)
     assert isinstance(countrydata._countries, list)
 
 
@@ -113,11 +64,43 @@ def test_CountryData_lazy_loaded_property(property_name):
 def test_CountryData_lazy_loaded_method(method_name, args, kwargs):
     countrydata = _countrydata.CountryData()
     assert countrydata._countries is None
-    print('getting method:', method_name)
     method = getattr(countrydata, method_name)
-    print('method:', method)
     method(*args, **kwargs)
     assert isinstance(countrydata._countries, list)
+
+
+@pytest.mark.parametrize(
+    argnames='filepath, filecontent, exp_countries',
+    argvalues=(
+        (
+            'custom/countries.json',
+            '[{"name_short": "Customland", "regex": "^custom$"}]',
+            [{'name_short': 'Customland', 'regex': re.compile('^custom$', flags=re.IGNORECASE)}],
+        ),
+        (
+            None,
+            '[{"name_short": "Kingdom of Default", "regex": "^default$"}]',
+            [{'name_short': 'Kingdom of Default', 'regex': re.compile('^default$', flags=re.IGNORECASE)}],
+        ),
+    ),
+    ids=lambda v: repr(v),
+)
+def test_load_countries(filepath, filecontent, exp_countries, tmp_path, mocker):
+    open_text_mock = mocker.patch('importlib.resources.open_text', return_value=(
+        io.StringIO('[{"name_short": "Kingdom of Default", "regex": "^default$"}]')
+    ))
+
+    if filepath:
+        filepath = tmp_path / filepath
+        filepath.parent.mkdir(parents=True, exist_ok=True)
+        filepath.write_text(filecontent)
+
+    countrydata = _countrydata.CountryData(filepath)
+    return_value = countrydata._load_countries()
+    assert return_value == exp_countries
+
+    if filepath is None:
+        assert open_text_mock.call_args_list == [call(__project_name__, '_countrydata.json')]
 
 
 def test_CountryData_property_countries():
@@ -147,7 +130,7 @@ property_test_data = '''[
     ),
     ids=lambda v: repr(v),
 )
-def test_CountryData_country_attribute_property(property_name, exp_value, tmp_path):
+def test_CountryData_property(property_name, exp_value, tmp_path):
     filepath = tmp_path / 'countrydata.json'
     filepath.write_text(property_test_data)
     countrydata = _countrydata.CountryData(filepath)
@@ -222,7 +205,6 @@ def test_CountryData_find_country(string, exp_info_index, mocker):
         },
     ]
     info = countrydata._find_country(string)
-    print(info)
     if exp_info_index is None:
         assert info is None
     else:

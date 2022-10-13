@@ -6,49 +6,55 @@ Library and country data is loaded lazily on demand.
 
 `guess_country()` uses the default country data that is packaged.
 
-    >>> from countryguess import guess_country
-    >>> guess_country("britain")
-    {
-        'name_short': 'United Kingdom',
-        'name_official': 'United Kingdom of Great Britain and Northern Ireland',
-        'iso2': 'GB',
-        'iso3': 'GBR',
-        ...
-    }
-    >>> guess_country("no such country")
-    None
-    >>> guess_country("no such country", default="Oh, well.")
-    'Oh, well.'
-    >>> guess_country("PoRtUgAl", attribute="iso2")
-    'PT'
-    >>> guess_country("TW", attribute="name_official")  # 2-letter code
-    'Republic of China'
-    >>> guess_country("TWN", attribute="name_short")    # 3-letter code
-    'Taiwan'
+```python
+>>> from countryguess import guess_country
+>>> guess_country("britain")
+{
+    'name_short': 'United Kingdom',
+    'name_official': 'United Kingdom of Great Britain and Northern Ireland',
+    'iso2': 'GB',
+    'iso3': 'GBR',
+    ...
+}
+>>> guess_country("no such country")
+None
+>>> guess_country("no such country", default="Oh, well.")
+'Oh, well.'
+>>> guess_country("PoRtUgAl", attribute="iso2")
+'PT'
+>>> guess_country("TW", attribute="name_official")  # 2-letter code
+'Republic of China'
+>>> guess_country("TWN", attribute="name_short")    # 3-letter code
+'Taiwan'
+```
 
 You can also create a `CountryData` instance yourself to provide your own
 country data.
 
-    >>> from countryguess import CountryData
-    >>> countries = CountryData("path/to/countries.json")
-    >>> countries["vIeTnAm"]
-    {'name_short': 'Vietnam', ...}
-    >>> countries["vn"]
-    {'name_short': 'Vietnam', ...}
-    >>> countries["asdf"]
-    KeyError: 'asdf'
-    >>> countries.get("asdf")
-    None
-    >>> countries.get("kuwait")
-    {'name_short': 'Kuwait', ...}
+```python
+>>> from countryguess import CountryData
+>>> countries = CountryData("path/to/countries.json")
+>>> countries["vIeTnAm"]
+{'name_short': 'Vietnam', ...}
+>>> countries["vn"]
+{'name_short': 'Vietnam', ...}
+>>> countries["asdf"]
+KeyError: 'asdf'
+>>> countries.get("asdf")
+None
+>>> countries.get("kuwait")
+{'name_short': 'Kuwait', ...}
+```
 
 On `CountryData` instances, every key in the JSON data is accessible as a
 method.
 
-    >>> countries.name_official("portugal")
-    'Portuguese Republic'
-    >>> countries.continent("vanuatu")
-    'Oceania'
+```python
+>>> countries.name_official("portugal")
+'Portuguese Republic'
+>>> countries.continent("vanuatu")
+'Oceania'
+```
 
 ### Country Lookup
 
@@ -83,14 +89,16 @@ represents a country that must contain at least the following keys:
 **countryguess** comes with a simple CLI with the same name. It takes one or two
 arguments:
 
-    $ countryguess oman
-    {
-        "name_short": "Oman",
-        "name_official": "Sultanate of Oman",
-        ...
-    }
-    $ countryguess 'puerto ricco' name_official
-    Puerto Rico
+```sh
+$ countryguess oman
+{
+    "name_short": "Oman",
+    "name_official": "Sultanate of Oman",
+    ...
+}
+$ countryguess 'puerto ricco' name_official
+Puerto Rico
+```
 
 ### Contributing
 

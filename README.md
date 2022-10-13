@@ -84,6 +84,54 @@ represents a country that must contain at least the following keys:
 - `iso3`
 - `regex`
 
+#### Packaged Classification Schemes
+
+The following classification schemes are available in the included country data.
+
+<!-- CLASSIFICATION_SCHEMES (see fetch_data_from_country_converter.py) -->
+1.  ISO2 (ISO 3166-1 alpha-2)
+2.  ISO3 (ISO 3166-1 alpha-3)
+3.  ISO - numeric (ISO 3166-1 numeric)
+4.  UN numeric code (M.49 - follows to a large extend ISO-numeric)
+5.  A standard or short name
+6.  The "official" name
+7.  Continent
+8.  UN region
+9.  [EXIOBASE](http://exiobase.eu/) 1 classification
+10. [EXIOBASE](http://exiobase.eu/) 2 classification
+11. [EXIOBASE](http://exiobase.eu/) 3 classification
+12. [WIOD](http://www.wiod.org/home) classification
+13. [Eora](http://www.worldmrio.com/)
+14. [OECD](http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm)
+    membership (per year)
+15. [MESSAGE](http://www.iiasa.ac.at/web/home/research/researchPrograms/Energy/MESSAGE-model-regions.en.html)
+    11-region classification
+16. [IMAGE](https://models.pbl.nl/image/index.php/Welcome_to_IMAGE_3.0_Documentation)
+17. [REMIND](https://www.pik-potsdam.de/en/institute/departments/transformation-pathways/models/remind)
+18. [UN](http://www.un.org/en/members/) membership (per year)
+19. [EU](https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:EU_enlargements)
+    membership (including EU12, EU15, EU25, EU27, EU27_2007, EU28)
+20. [EEA](https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:European_Economic_Area_(EEA))
+    membership
+21. [Schengen](https://en.wikipedia.org/wiki/Schengen_Area) region
+22. [Cecilia](https://cecilia2050.eu/system/files/De%20Koning%20et%20al.%20%282014%29_Scenarios%20for%202050_0.pdf)
+    2050 classification
+23. [APEC](https://en.wikipedia.org/wiki/Asia-Pacific_Economic_Cooperation)
+24. [BRIC](https://en.wikipedia.org/wiki/BRIC)
+25. [BASIC](https://en.wikipedia.org/wiki/BASIC_countries)
+26. [CIS](https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States)
+    (as by 2019, excl. Turkmenistan)
+27. [G7](https://en.wikipedia.org/wiki/Group_of_Seven)
+28. [G20](https://en.wikipedia.org/wiki/G20) (listing all EU member
+    states as individual members)
+29. [FAOcode](http://www.fao.org/faostat/en/#definitions) (numeric)
+30. [GBDcode](http://ghdx.healthdata.org/) (numeric - Global Burden of
+    Disease country codes)
+31. [IEA](https://www.iea.org/countries) (World Energy Balances 2021)
+32. [DACcode](https://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/dacandcrscodelists.htm)
+    (numeric - OECD Development Assistance Committee)
+<!-- CLASSIFICATION_SCHEMES -->
+
 ### Command Line Interface
 
 **countryguess** comes with a simple CLI with the same name. It takes one or two

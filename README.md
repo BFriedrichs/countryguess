@@ -2,6 +2,9 @@
 to be lean (but not mean) and fast: All dependencies are in the Python Standard
 Library and country data is loaded lazily on demand.
 
+Code: [Codeberg](https://codeberg.org/plotski/countryguess)
+Package: [PyPI](https://pypi.org/project/countryguess)
+
 ### Usage
 
 `guess_country()` uses the default country data that is packaged.

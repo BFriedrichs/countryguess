@@ -1,6 +1,7 @@
 import copy
 import io
 import re
+import sys
 from unittest.mock import Mock, call
 
 import pytest
@@ -86,9 +87,32 @@ def test_CountryData_lazy_loaded_method(method_name, args, kwargs):
     ids=lambda v: repr(v),
 )
 def test_load_countries(filepath, filecontent, exp_countries, tmp_path, mocker):
-    open_text_mock = mocker.patch('importlib.resources.open_text', return_value=(
-        io.StringIO('[{"name_short": "Kingdom of Default", "regex": "^default$"}]')
-    ))
+    if sys.version_info <= (3, 9, 0):
+        # TODO: Remove this when Python 3.9 is no longer supported
+        open_text_mock = mocker.patch('importlib.resources.open_text', return_value=(
+            io.StringIO('[{"name_short": "Kingdom of Default", "regex": "^default$"}]')
+        ))
+
+        def assert_expectations():
+            assert open_text_mock.call_args_list == [call(__project_name__, '_countrydata.json')]
+
+    else:
+        # Python 3.13 removes importlib.resources.open_text()
+        files_mock = mocker.patch('importlib.resources.files')
+        package_path_mock = files_mock.return_value
+        joinpath_mock = package_path_mock.joinpath
+        file_path_mock = joinpath_mock.return_value
+        open_mock = file_path_mock.open
+        open_mock.return_value = (
+            io.StringIO('[{"name_short": "Kingdom of Default", "regex": "^default$"}]')
+        )
+
+        def assert_expectations():
+            assert files_mock.mock_calls == [
+                call(__project_name__),
+                call().joinpath('_countrydata.json'),
+                call().joinpath().open('r', encoding='utf8'),
+            ]
 
     if filepath:
         filepath = tmp_path / filepath
@@ -100,7 +124,7 @@ def test_load_countries(filepath, filecontent, exp_countries, tmp_path, mocker):
     assert return_value == exp_countries
 
     if filepath is None:
-        assert open_text_mock.call_args_list == [call(__project_name__, '_countrydata.json')]
+        assert_expectations()
 
 
 def test_CountryData_property_countries():

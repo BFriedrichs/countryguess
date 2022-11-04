@@ -3,6 +3,7 @@ import functools
 import importlib.resources
 import json
 import re
+import sys
 
 from . import __project_name__
 
@@ -29,7 +30,14 @@ class CountryData:
         if self._filepath is not None:
             stream = open(self._filepath, 'r')
         else:
-            stream = importlib.resources.open_text(__project_name__, '_countrydata.json')
+            if sys.version_info <= (3, 9, 0):
+                # TODO: Remove this when Python 3.9 is no longer supported
+                stream = importlib.resources.open_text(__project_name__, '_countrydata.json')
+            else:
+                # Python 3.13 removes importlib.resources.open_text()
+                package_path = importlib.resources.files(__project_name__)
+                file_path = package_path.joinpath('_countrydata.json')
+                stream = file_path.open('r', encoding='utf8')
 
         country_list = json.load(stream)
 

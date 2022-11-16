@@ -26,6 +26,7 @@ def fetch_country_data():
     patches = {
         # https://github.com/konstantinstadler/country_converter/issues/92
         # https://github.com/konstantinstadler/country_converter/commit/6a06051e915e76a9ffc29fe0c08808cf403df99f
+        # https://github.com/konstantinstadler/country_converter/blob/master/country_converter/country_data.tsv#L242
         'United Kingdom of Great Britain and Northern Ireland': {
             'iso2': 'GB',
         },

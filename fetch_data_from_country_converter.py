@@ -19,7 +19,7 @@ readme_file = os.path.join(cwd, 'README.md')
 
 
 def show_diff(path):
-    subprocess.run(['git', 'diff', '--word-diff', path])
+    subprocess.run(['git', '--no-pager', 'diff', '--word-diff', path])
 
 
 def fetch_country_data():

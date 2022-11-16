@@ -25,9 +25,9 @@ None
 'Oh, well.'
 >>> guess_country("PoRtUgAl", attribute="iso2")
 'PT'
->>> guess_country("TW", attribute="name_official")  # 2-letter code
+>>> guess_country("TW", attribute="name_official")  # 2-letter code lookup
 'Republic of China'
->>> guess_country("TWN", attribute="name_short")    # 3-letter code
+>>> guess_country("tWn", attribute="name_short")    # 3-letter code lookup
 'Taiwan'
 ```
 

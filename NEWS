@@ -1,2 +1,6 @@
+0.2.0
+  * Added country attributes: cctld, gwcode
+
+
 0.1.0
   * Initial release

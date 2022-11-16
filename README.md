@@ -133,6 +133,8 @@ The following classification schemes are available in the included country data.
 31. [IEA](https://www.iea.org/countries) (World Energy Balances 2021)
 32. [DACcode](https://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/dacandcrscodelists.htm)
     (numeric - OECD Development Assistance Committee)
+33. [ccTLD](https://en.wikipedia.org/wiki/Country_code_top-level_domain) - country code top-level domains
+34. [GWcode](https://www.tandfonline.com/doi/abs/10.1080/03050629908434958) - Gledisch & Ward numerical codes as published in https://www.andybeger.com/states/articles/statelists.html
 <!-- CLASSIFICATION_SCHEMES -->
 
 ### Command Line Interface

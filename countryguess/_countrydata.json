@@ -44,7 +44,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "625"
+    "daccode": "625",
+    "cctld": "af",
+    "gwcode": "700"
   },
   {
     "name_short": "Aland Islands",
@@ -91,7 +93,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "ax",
+    "gwcode": ""
   },
   {
     "name_short": "Albania",
@@ -138,7 +142,9 @@
     "g7": "",
     "g20": "",
     "iea": "Albania",
-    "daccode": "71"
+    "daccode": "71",
+    "cctld": "al",
+    "gwcode": "339"
   },
   {
     "name_short": "Algeria",
@@ -185,7 +191,9 @@
     "g7": "",
     "g20": "",
     "iea": "Algeria",
-    "daccode": "130"
+    "daccode": "130",
+    "cctld": "dz",
+    "gwcode": "615"
   },
   {
     "name_short": "American Samoa",
@@ -232,7 +240,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "880"
+    "daccode": "880",
+    "cctld": "as",
+    "gwcode": ""
   },
   {
     "name_short": "Andorra",
@@ -279,7 +289,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "ad",
+    "gwcode": "232"
   },
   {
     "name_short": "Angola",
@@ -326,7 +338,9 @@
     "g7": "",
     "g20": "",
     "iea": "Angola",
-    "daccode": "225"
+    "daccode": "225",
+    "cctld": "ao",
+    "gwcode": "540"
   },
   {
     "name_short": "Anguilla",
@@ -373,7 +387,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "ai",
+    "gwcode": ""
   },
   {
     "name_short": "Antarctica",
@@ -420,7 +436,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "aq",
+    "gwcode": ""
   },
   {
     "name_short": "Antigua and Barbuda",
@@ -467,7 +485,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": "377"
+    "daccode": "377",
+    "cctld": "ag",
+    "gwcode": "58"
   },
   {
     "name_short": "Argentina",
@@ -514,7 +534,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Argentina",
-    "daccode": "425"
+    "daccode": "425",
+    "cctld": "ar",
+    "gwcode": "160"
   },
   {
     "name_short": "Armenia",
@@ -561,7 +583,9 @@
     "g7": "",
     "g20": "",
     "iea": "Armenia",
-    "daccode": "610"
+    "daccode": "610",
+    "cctld": "am",
+    "gwcode": "371"
   },
   {
     "name_short": "Aruba",
@@ -608,7 +632,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "aw",
+    "gwcode": ""
   },
   {
     "name_short": "Australia",
@@ -655,7 +681,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Australia",
-    "daccode": "801"
+    "daccode": "801",
+    "cctld": "au",
+    "gwcode": "900"
   },
   {
     "name_short": "Austria",
@@ -702,7 +730,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Austria",
-    "daccode": "1"
+    "daccode": "1",
+    "cctld": "at",
+    "gwcode": "305"
   },
   {
     "name_short": "Azerbaijan",
@@ -749,7 +779,9 @@
     "g7": "",
     "g20": "",
     "iea": "Azerbaijan",
-    "daccode": "611"
+    "daccode": "611",
+    "cctld": "az",
+    "gwcode": "373"
   },
   {
     "name_short": "Bahamas",
@@ -796,7 +828,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "bs",
+    "gwcode": "31"
   },
   {
     "name_short": "Bahrain",
@@ -843,7 +877,9 @@
     "g7": "",
     "g20": "",
     "iea": "Bahrain",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "bh",
+    "gwcode": "692"
   },
   {
     "name_short": "Bangladesh",
@@ -890,7 +926,9 @@
     "g7": "",
     "g20": "",
     "iea": "Bangladesh",
-    "daccode": "666"
+    "daccode": "666",
+    "cctld": "bd",
+    "gwcode": "771"
   },
   {
     "name_short": "Barbados",
@@ -937,7 +975,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "bb",
+    "gwcode": "53"
   },
   {
     "name_short": "Belarus",
@@ -984,7 +1024,9 @@
     "g7": "",
     "g20": "",
     "iea": "Belarus",
-    "daccode": "86"
+    "daccode": "86",
+    "cctld": "by",
+    "gwcode": "370"
   },
   {
     "name_short": "Belgium",
@@ -1031,7 +1073,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Belgium",
-    "daccode": "2"
+    "daccode": "2",
+    "cctld": "be",
+    "gwcode": "211"
   },
   {
     "name_short": "Belize",
@@ -1078,7 +1122,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": "352"
+    "daccode": "352",
+    "cctld": "bz",
+    "gwcode": "80"
   },
   {
     "name_short": "Benin",
@@ -1125,7 +1171,9 @@
     "g7": "",
     "g20": "",
     "iea": "Benin",
-    "daccode": "236"
+    "daccode": "236",
+    "cctld": "bj",
+    "gwcode": "434"
   },
   {
     "name_short": "Bermuda",
@@ -1172,7 +1220,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "bm",
+    "gwcode": ""
   },
   {
     "name_short": "Bhutan",
@@ -1219,7 +1269,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "630"
+    "daccode": "630",
+    "cctld": "bt",
+    "gwcode": "760"
   },
   {
     "name_short": "Bolivia",
@@ -1266,7 +1318,9 @@
     "g7": "",
     "g20": "",
     "iea": "Plurinational State of Bolivia",
-    "daccode": "428"
+    "daccode": "428",
+    "cctld": "bo",
+    "gwcode": "145"
   },
   {
     "name_short": "Bonaire, Saint Eustatius and Saba",
@@ -1313,7 +1367,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "bq",
+    "gwcode": ""
   },
   {
     "name_short": "Bosnia and Herzegovina",
@@ -1360,7 +1416,9 @@
     "g7": "",
     "g20": "",
     "iea": "Bosnia and Herzegovina",
-    "daccode": "64"
+    "daccode": "64",
+    "cctld": "ba",
+    "gwcode": "346"
   },
   {
     "name_short": "Botswana",
@@ -1407,7 +1465,9 @@
     "g7": "",
     "g20": "",
     "iea": "Botswana",
-    "daccode": "227"
+    "daccode": "227",
+    "cctld": "bw",
+    "gwcode": "571"
   },
   {
     "name_short": "Bouvet Island",
@@ -1454,7 +1514,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "Brazil",
@@ -1501,7 +1563,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Brazil",
-    "daccode": "431"
+    "daccode": "431",
+    "cctld": "br",
+    "gwcode": "140"
   },
   {
     "name_short": "British Antarctic Territories",
@@ -1548,7 +1612,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "British Indian Ocean Territory",
@@ -1595,7 +1661,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "io",
+    "gwcode": ""
   },
   {
     "name_short": "British Virgin Islands",
@@ -1642,7 +1710,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "vg",
+    "gwcode": ""
   },
   {
     "name_short": "Brunei Darussalam",
@@ -1655,7 +1725,7 @@
     "faocode": "26",
     "gbdcode": "66",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -1689,7 +1759,9 @@
     "g7": "",
     "g20": "",
     "iea": "Brunei Darussalam",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "bn",
+    "gwcode": "835"
   },
   {
     "name_short": "Bulgaria",
@@ -1736,7 +1808,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Bulgaria",
-    "daccode": "72"
+    "daccode": "72",
+    "cctld": "bg",
+    "gwcode": "355"
   },
   {
     "name_short": "Burkina Faso",
@@ -1783,7 +1857,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "287"
+    "daccode": "287",
+    "cctld": "bf",
+    "gwcode": "439"
   },
   {
     "name_short": "Burundi",
@@ -1830,7 +1906,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "228"
+    "daccode": "228",
+    "cctld": "bi",
+    "gwcode": "516"
   },
   {
     "name_short": "Cabo Verde",
@@ -1877,7 +1955,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "230"
+    "daccode": "230",
+    "cctld": "cv",
+    "gwcode": "402"
   },
   {
     "name_short": "Cambodia",
@@ -1890,7 +1970,7 @@
     "faocode": "115",
     "gbdcode": "10",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -1924,7 +2004,9 @@
     "g7": "",
     "g20": "",
     "iea": "Cambodia",
-    "daccode": "728"
+    "daccode": "728",
+    "cctld": "kh",
+    "gwcode": "811"
   },
   {
     "name_short": "Cameroon",
@@ -1971,7 +2053,9 @@
     "g7": "",
     "g20": "",
     "iea": "Cameroon",
-    "daccode": "229"
+    "daccode": "229",
+    "cctld": "cm",
+    "gwcode": "471"
   },
   {
     "name_short": "Canada",
@@ -2018,7 +2102,9 @@
     "g7": "G7",
     "g20": "G20",
     "iea": "Canada",
-    "daccode": "301"
+    "daccode": "301",
+    "cctld": "ca",
+    "gwcode": "20"
   },
   {
     "name_short": "Cayman Islands",
@@ -2065,7 +2151,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "ky",
+    "gwcode": ""
   },
   {
     "name_short": "Central African Republic",
@@ -2112,7 +2200,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "231"
+    "daccode": "231",
+    "cctld": "cf",
+    "gwcode": "482"
   },
   {
     "name_short": "Chad",
@@ -2159,7 +2249,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "232"
+    "daccode": "232",
+    "cctld": "td",
+    "gwcode": "483"
   },
   {
     "name_short": "Channel Islands",
@@ -2192,7 +2284,7 @@
     "eu25": "",
     "eu15": "",
     "eu12": "",
-    "eea": "EEA",
+    "eea": "",
     "schengen": "",
     "euro": "",
     "un": "",
@@ -2206,7 +2298,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "Chile",
@@ -2253,7 +2347,9 @@
     "g7": "",
     "g20": "",
     "iea": "Chile",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "cl",
+    "gwcode": "155"
   },
   {
     "name_short": "China",
@@ -2300,7 +2396,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "People's Republic of China",
-    "daccode": "730"
+    "daccode": "730",
+    "cctld": "cn",
+    "gwcode": "710"
   },
   {
     "name_short": "Christmas Island",
@@ -2347,7 +2445,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "cx",
+    "gwcode": ""
   },
   {
     "name_short": "Cocos (Keeling) Islands",
@@ -2394,7 +2494,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "cc",
+    "gwcode": ""
   },
   {
     "name_short": "Colombia",
@@ -2441,7 +2543,9 @@
     "g7": "",
     "g20": "",
     "iea": "Colombia",
-    "daccode": "437"
+    "daccode": "437",
+    "cctld": "co",
+    "gwcode": "100"
   },
   {
     "name_short": "Comoros",
@@ -2488,7 +2592,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "233"
+    "daccode": "233",
+    "cctld": "km",
+    "gwcode": "581"
   },
   {
     "name_short": "Congo Republic",
@@ -2535,7 +2641,9 @@
     "g7": "",
     "g20": "",
     "iea": "Republic of the Congo",
-    "daccode": "234"
+    "daccode": "234",
+    "cctld": "cg",
+    "gwcode": "484"
   },
   {
     "name_short": "Cook Islands",
@@ -2582,7 +2690,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "ck",
+    "gwcode": ""
   },
   {
     "name_short": "Costa Rica",
@@ -2607,7 +2717,7 @@
     "message": "LAC",
     "image": "Central America",
     "remind": "LAM",
-    "oecd": "",
+    "oecd": "2021",
     "eu": "",
     "eu28": "",
     "eu27": "",
@@ -2629,7 +2739,9 @@
     "g7": "",
     "g20": "",
     "iea": "Costa Rica",
-    "daccode": "336"
+    "daccode": "336",
+    "cctld": "cr",
+    "gwcode": "94"
   },
   {
     "name_short": "Cote d'Ivoire",
@@ -2676,7 +2788,9 @@
     "g7": "",
     "g20": "",
     "iea": "C\u00f4te d'Ivoire",
-    "daccode": "247"
+    "daccode": "247",
+    "cctld": "ci",
+    "gwcode": "437"
   },
   {
     "name_short": "Croatia",
@@ -2723,7 +2837,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Croatia",
-    "daccode": "62"
+    "daccode": "62",
+    "cctld": "hr",
+    "gwcode": "344"
   },
   {
     "name_short": "Cuba",
@@ -2770,7 +2886,9 @@
     "g7": "",
     "g20": "",
     "iea": "Cuba",
-    "daccode": "338"
+    "daccode": "338",
+    "cctld": "cu",
+    "gwcode": "40"
   },
   {
     "name_short": "Curacao",
@@ -2817,7 +2935,9 @@
     "g7": "",
     "g20": "",
     "iea": "Cura\u00e7ao/Netherlands Antilles",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "cw",
+    "gwcode": ""
   },
   {
     "name_short": "Cyprus",
@@ -2864,7 +2984,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Cyprus",
-    "daccode": "30"
+    "daccode": "30",
+    "cctld": "cy",
+    "gwcode": "352"
   },
   {
     "name_short": "Czech Republic",
@@ -2911,7 +3033,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Czech Republic",
-    "daccode": "68"
+    "daccode": "68",
+    "cctld": "cz",
+    "gwcode": "315"
   },
   {
     "name_short": "Denmark",
@@ -2958,7 +3082,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Denmark",
-    "daccode": "3"
+    "daccode": "3",
+    "cctld": "dk",
+    "gwcode": "390"
   },
   {
     "name_short": "Djibouti",
@@ -3005,7 +3131,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "274"
+    "daccode": "274",
+    "cctld": "dj",
+    "gwcode": "522"
   },
   {
     "name_short": "Dominica",
@@ -3052,7 +3180,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": "378"
+    "daccode": "378",
+    "cctld": "dm",
+    "gwcode": "54"
   },
   {
     "name_short": "Dominican Republic",
@@ -3099,7 +3229,9 @@
     "g7": "",
     "g20": "",
     "iea": "Dominican Republic",
-    "daccode": "340"
+    "daccode": "340",
+    "cctld": "do",
+    "gwcode": "42"
   },
   {
     "name_short": "DR Congo",
@@ -3146,7 +3278,9 @@
     "g7": "",
     "g20": "",
     "iea": "Democratic Republic of the Congo",
-    "daccode": "235"
+    "daccode": "235",
+    "cctld": "cd",
+    "gwcode": "490"
   },
   {
     "name_short": "Ecuador",
@@ -3193,7 +3327,9 @@
     "g7": "",
     "g20": "",
     "iea": "Ecuador",
-    "daccode": "440"
+    "daccode": "440",
+    "cctld": "ec",
+    "gwcode": "130"
   },
   {
     "name_short": "Egypt",
@@ -3240,7 +3376,9 @@
     "g7": "",
     "g20": "",
     "iea": "Egypt",
-    "daccode": "142"
+    "daccode": "142",
+    "cctld": "eg",
+    "gwcode": "651"
   },
   {
     "name_short": "El Salvador",
@@ -3287,7 +3425,9 @@
     "g7": "",
     "g20": "",
     "iea": "El Salvador",
-    "daccode": "342"
+    "daccode": "342",
+    "cctld": "sv",
+    "gwcode": "92"
   },
   {
     "name_short": "Equatorial Guinea",
@@ -3334,7 +3474,9 @@
     "g7": "",
     "g20": "",
     "iea": "Equatorial Guinea",
-    "daccode": "245"
+    "daccode": "245",
+    "cctld": "gq",
+    "gwcode": "411"
   },
   {
     "name_short": "Eritrea",
@@ -3381,7 +3523,9 @@
     "g7": "",
     "g20": "",
     "iea": "Eritrea",
-    "daccode": "271"
+    "daccode": "271",
+    "cctld": "er",
+    "gwcode": "531"
   },
   {
     "name_short": "Estonia",
@@ -3428,7 +3572,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Estonia",
-    "daccode": "82"
+    "daccode": "82",
+    "cctld": "ee",
+    "gwcode": "366"
   },
   {
     "name_short": "Eswatini",
@@ -3475,7 +3621,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "280"
+    "daccode": "280",
+    "cctld": "sz",
+    "gwcode": "572"
   },
   {
     "name_short": "Ethiopia",
@@ -3522,7 +3670,9 @@
     "g7": "",
     "g20": "",
     "iea": "Ethiopia",
-    "daccode": "238"
+    "daccode": "238",
+    "cctld": "et",
+    "gwcode": "530"
   },
   {
     "name_short": "Faeroe Islands",
@@ -3569,7 +3719,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "fo",
+    "gwcode": ""
   },
   {
     "name_short": "Falkland Islands",
@@ -3616,7 +3768,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "fk",
+    "gwcode": ""
   },
   {
     "name_short": "Fiji",
@@ -3663,7 +3817,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "832"
+    "daccode": "832",
+    "cctld": "fj",
+    "gwcode": "950"
   },
   {
     "name_short": "Finland",
@@ -3710,7 +3866,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Finland",
-    "daccode": "18"
+    "daccode": "18",
+    "cctld": "fi",
+    "gwcode": "375"
   },
   {
     "name_short": "France",
@@ -3757,7 +3915,9 @@
     "g7": "G7",
     "g20": "G20",
     "iea": "France",
-    "daccode": "4"
+    "daccode": "4",
+    "cctld": "fr",
+    "gwcode": "220"
   },
   {
     "name_short": "French Guiana",
@@ -3804,7 +3964,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "gf",
+    "gwcode": ""
   },
   {
     "name_short": "French Polynesia",
@@ -3851,7 +4013,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "pf",
+    "gwcode": ""
   },
   {
     "name_short": "French Southern Territories",
@@ -3898,7 +4062,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "tf",
+    "gwcode": ""
   },
   {
     "name_short": "Gabon",
@@ -3945,7 +4111,9 @@
     "g7": "",
     "g20": "",
     "iea": "Gabon",
-    "daccode": "239"
+    "daccode": "239",
+    "cctld": "ga",
+    "gwcode": "481"
   },
   {
     "name_short": "Gambia",
@@ -3992,7 +4160,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "240"
+    "daccode": "240",
+    "cctld": "gm",
+    "gwcode": "420"
   },
   {
     "name_short": "Georgia",
@@ -4039,7 +4209,9 @@
     "g7": "",
     "g20": "",
     "iea": "Georgia",
-    "daccode": "612"
+    "daccode": "612",
+    "cctld": "ge",
+    "gwcode": "372"
   },
   {
     "name_short": "Germany",
@@ -4086,7 +4258,9 @@
     "g7": "G7",
     "g20": "G20",
     "iea": "Germany",
-    "daccode": "5"
+    "daccode": "5",
+    "cctld": "de",
+    "gwcode": "260"
   },
   {
     "name_short": "Ghana",
@@ -4133,7 +4307,9 @@
     "g7": "",
     "g20": "",
     "iea": "Ghana",
-    "daccode": "241"
+    "daccode": "241",
+    "cctld": "gh",
+    "gwcode": "452"
   },
   {
     "name_short": "Gibraltar",
@@ -4166,7 +4342,7 @@
     "eu25": "",
     "eu15": "",
     "eu12": "",
-    "eea": "EEA",
+    "eea": "",
     "schengen": "",
     "euro": "",
     "un": "",
@@ -4180,7 +4356,9 @@
     "g7": "",
     "g20": "",
     "iea": "Gibraltar",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "gi",
+    "gwcode": ""
   },
   {
     "name_short": "Greece",
@@ -4227,7 +4405,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Greece",
-    "daccode": "40"
+    "daccode": "40",
+    "cctld": "gr",
+    "gwcode": "350"
   },
   {
     "name_short": "Greenland",
@@ -4274,7 +4454,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "gl",
+    "gwcode": ""
   },
   {
     "name_short": "Grenada",
@@ -4321,7 +4503,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": "381"
+    "daccode": "381",
+    "cctld": "gd",
+    "gwcode": "55"
   },
   {
     "name_short": "Guadeloupe",
@@ -4368,7 +4552,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "gp",
+    "gwcode": ""
   },
   {
     "name_short": "Guam",
@@ -4415,7 +4601,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "gu",
+    "gwcode": ""
   },
   {
     "name_short": "Guatemala",
@@ -4462,7 +4650,9 @@
     "g7": "",
     "g20": "",
     "iea": "Guatemala",
-    "daccode": "347"
+    "daccode": "347",
+    "cctld": "gt",
+    "gwcode": "90"
   },
   {
     "name_short": "Guernsey",
@@ -4495,7 +4685,7 @@
     "eu25": "",
     "eu15": "",
     "eu12": "",
-    "eea": "EEA",
+    "eea": "",
     "schengen": "",
     "euro": "",
     "un": "",
@@ -4509,7 +4699,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "gg",
+    "gwcode": ""
   },
   {
     "name_short": "Guinea",
@@ -4556,7 +4748,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "243"
+    "daccode": "243",
+    "cctld": "gn",
+    "gwcode": "438"
   },
   {
     "name_short": "Guinea-Bissau",
@@ -4603,7 +4797,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "244"
+    "daccode": "244",
+    "cctld": "gw",
+    "gwcode": "404"
   },
   {
     "name_short": "Guyana",
@@ -4650,7 +4846,9 @@
     "g7": "",
     "g20": "",
     "iea": "Guyana",
-    "daccode": "446"
+    "daccode": "446",
+    "cctld": "gy",
+    "gwcode": "110"
   },
   {
     "name_short": "Haiti",
@@ -4697,7 +4895,9 @@
     "g7": "",
     "g20": "",
     "iea": "Haiti",
-    "daccode": "349"
+    "daccode": "349",
+    "cctld": "ht",
+    "gwcode": "41"
   },
   {
     "name_short": "Heard and McDonald Islands",
@@ -4744,7 +4944,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "hm",
+    "gwcode": ""
   },
   {
     "name_short": "Honduras",
@@ -4791,7 +4993,9 @@
     "g7": "",
     "g20": "",
     "iea": "Honduras",
-    "daccode": "351"
+    "daccode": "351",
+    "cctld": "hn",
+    "gwcode": "91"
   },
   {
     "name_short": "Hong Kong",
@@ -4838,7 +5042,9 @@
     "g7": "",
     "g20": "",
     "iea": "Hong Kong (China)",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "hk",
+    "gwcode": ""
   },
   {
     "name_short": "Hungary",
@@ -4885,7 +5091,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Hungary",
-    "daccode": "75"
+    "daccode": "75",
+    "cctld": "hu",
+    "gwcode": "310"
   },
   {
     "name_short": "Iceland",
@@ -4932,7 +5140,9 @@
     "g7": "",
     "g20": "",
     "iea": "Iceland",
-    "daccode": "20"
+    "daccode": "20",
+    "cctld": "is",
+    "gwcode": "395"
   },
   {
     "name_short": "India",
@@ -4979,7 +5189,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "India",
-    "daccode": "645"
+    "daccode": "645",
+    "cctld": "in",
+    "gwcode": "750"
   },
   {
     "name_short": "Indonesia",
@@ -4992,7 +5204,7 @@
     "faocode": "101",
     "gbdcode": "11",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "ID",
     "exio2": "ID",
     "exio3": "ID",
@@ -5026,7 +5238,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Indonesia",
-    "daccode": "738"
+    "daccode": "738",
+    "cctld": "id",
+    "gwcode": "850"
   },
   {
     "name_short": "Iran",
@@ -5073,7 +5287,9 @@
     "g7": "",
     "g20": "",
     "iea": "Islamic Republic of Iran",
-    "daccode": "540"
+    "daccode": "540",
+    "cctld": "ir",
+    "gwcode": "630"
   },
   {
     "name_short": "Iraq",
@@ -5120,7 +5336,9 @@
     "g7": "",
     "g20": "",
     "iea": "Iraq",
-    "daccode": "543"
+    "daccode": "543",
+    "cctld": "iq",
+    "gwcode": "645"
   },
   {
     "name_short": "Ireland",
@@ -5167,7 +5385,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Ireland",
-    "daccode": "21"
+    "daccode": "21",
+    "cctld": "ie",
+    "gwcode": "205"
   },
   {
     "name_short": "Isle of Man",
@@ -5200,7 +5420,7 @@
     "eu25": "",
     "eu15": "",
     "eu12": "",
-    "eea": "EEA",
+    "eea": "",
     "schengen": "",
     "euro": "",
     "un": "",
@@ -5214,7 +5434,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "im",
+    "gwcode": ""
   },
   {
     "name_short": "Israel",
@@ -5261,7 +5483,9 @@
     "g7": "",
     "g20": "",
     "iea": "Israel",
-    "daccode": "546"
+    "daccode": "546",
+    "cctld": "il",
+    "gwcode": "666"
   },
   {
     "name_short": "Italy",
@@ -5308,7 +5532,9 @@
     "g7": "G7",
     "g20": "G20",
     "iea": "Italy",
-    "daccode": "6"
+    "daccode": "6",
+    "cctld": "it",
+    "gwcode": "325"
   },
   {
     "name_short": "Jamaica",
@@ -5355,7 +5581,9 @@
     "g7": "",
     "g20": "",
     "iea": "Jamaica",
-    "daccode": "354"
+    "daccode": "354",
+    "cctld": "jm",
+    "gwcode": "51"
   },
   {
     "name_short": "Japan",
@@ -5402,7 +5630,9 @@
     "g7": "G7",
     "g20": "G20",
     "iea": "Japan",
-    "daccode": "701"
+    "daccode": "701",
+    "cctld": "jp",
+    "gwcode": "740"
   },
   {
     "name_short": "Jersey",
@@ -5435,7 +5665,7 @@
     "eu25": "",
     "eu15": "",
     "eu12": "",
-    "eea": "EEA",
+    "eea": "",
     "schengen": "",
     "euro": "",
     "un": "",
@@ -5449,7 +5679,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "je",
+    "gwcode": ""
   },
   {
     "name_short": "Jordan",
@@ -5496,7 +5728,9 @@
     "g7": "",
     "g20": "",
     "iea": "Jordan",
-    "daccode": "549"
+    "daccode": "549",
+    "cctld": "jo",
+    "gwcode": "663"
   },
   {
     "name_short": "Kazakhstan",
@@ -5543,7 +5777,9 @@
     "g7": "",
     "g20": "",
     "iea": "Kazakhstan",
-    "daccode": "613"
+    "daccode": "613",
+    "cctld": "kz",
+    "gwcode": "705"
   },
   {
     "name_short": "Kenya",
@@ -5590,7 +5826,9 @@
     "g7": "",
     "g20": "",
     "iea": "Kenya",
-    "daccode": "248"
+    "daccode": "248",
+    "cctld": "ke",
+    "gwcode": "501"
   },
   {
     "name_short": "Kiribati",
@@ -5637,7 +5875,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "836"
+    "daccode": "836",
+    "cctld": "ki",
+    "gwcode": "970"
   },
   {
     "name_short": "Kosovo",
@@ -5684,7 +5924,9 @@
     "g7": "",
     "g20": "",
     "iea": "Kosovo",
-    "daccode": "57"
+    "daccode": "57",
+    "cctld": "",
+    "gwcode": "347"
   },
   {
     "name_short": "Kuwait",
@@ -5731,7 +5973,9 @@
     "g7": "",
     "g20": "",
     "iea": "Kuwait",
-    "daccode": "552"
+    "daccode": "552",
+    "cctld": "kw",
+    "gwcode": "690"
   },
   {
     "name_short": "Kyrgyz Republic",
@@ -5778,7 +6022,9 @@
     "g7": "",
     "g20": "",
     "iea": "Kyrgyzstan",
-    "daccode": "614"
+    "daccode": "614",
+    "cctld": "kg",
+    "gwcode": "703"
   },
   {
     "name_short": "Laos",
@@ -5791,7 +6037,7 @@
     "faocode": "120",
     "gbdcode": "12",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -5825,7 +6071,9 @@
     "g7": "",
     "g20": "",
     "iea": "Lao People's Democratic Republic",
-    "daccode": "745"
+    "daccode": "745",
+    "cctld": "la",
+    "gwcode": "812"
   },
   {
     "name_short": "Latvia",
@@ -5872,7 +6120,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Latvia",
-    "daccode": "83"
+    "daccode": "83",
+    "cctld": "lv",
+    "gwcode": "367"
   },
   {
     "name_short": "Lebanon",
@@ -5919,7 +6169,9 @@
     "g7": "",
     "g20": "",
     "iea": "Lebanon",
-    "daccode": "555"
+    "daccode": "555",
+    "cctld": "lb",
+    "gwcode": "660"
   },
   {
     "name_short": "Lesotho",
@@ -5966,7 +6218,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "249"
+    "daccode": "249",
+    "cctld": "ls",
+    "gwcode": "570"
   },
   {
     "name_short": "Liberia",
@@ -6013,7 +6267,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "251"
+    "daccode": "251",
+    "cctld": "lr",
+    "gwcode": "450"
   },
   {
     "name_short": "Libya",
@@ -6060,7 +6316,9 @@
     "g7": "",
     "g20": "",
     "iea": "Libya",
-    "daccode": "133"
+    "daccode": "133",
+    "cctld": "ly",
+    "gwcode": "620"
   },
   {
     "name_short": "Liechtenstein",
@@ -6107,7 +6365,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": "70"
+    "daccode": "70",
+    "cctld": "li",
+    "gwcode": "223"
   },
   {
     "name_short": "Lithuania",
@@ -6154,7 +6414,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Lithuania",
-    "daccode": "84"
+    "daccode": "84",
+    "cctld": "lt",
+    "gwcode": "368"
   },
   {
     "name_short": "Luxembourg",
@@ -6201,7 +6463,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Luxembourg",
-    "daccode": "22"
+    "daccode": "22",
+    "cctld": "lu",
+    "gwcode": "212"
   },
   {
     "name_short": "Macau",
@@ -6248,7 +6512,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "mo",
+    "gwcode": ""
   },
   {
     "name_short": "North Macedonia",
@@ -6295,7 +6561,9 @@
     "g7": "",
     "g20": "",
     "iea": "Republic of North Macedonia",
-    "daccode": "66"
+    "daccode": "66",
+    "cctld": "mk",
+    "gwcode": "343"
   },
   {
     "name_short": "Madagascar",
@@ -6342,7 +6610,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "252"
+    "daccode": "252",
+    "cctld": "mg",
+    "gwcode": "580"
   },
   {
     "name_short": "Malawi",
@@ -6389,7 +6659,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "253"
+    "daccode": "253",
+    "cctld": "mw",
+    "gwcode": "553"
   },
   {
     "name_short": "Malaysia",
@@ -6402,7 +6674,7 @@
     "faocode": "131",
     "gbdcode": "13",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -6436,7 +6708,9 @@
     "g7": "",
     "g20": "",
     "iea": "Malaysia",
-    "daccode": "751"
+    "daccode": "751",
+    "cctld": "my",
+    "gwcode": "820"
   },
   {
     "name_short": "Maldives",
@@ -6483,7 +6757,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "655"
+    "daccode": "655",
+    "cctld": "mv",
+    "gwcode": "781"
   },
   {
     "name_short": "Mali",
@@ -6530,7 +6806,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "255"
+    "daccode": "255",
+    "cctld": "ml",
+    "gwcode": "432"
   },
   {
     "name_short": "Malta",
@@ -6577,7 +6855,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Malta",
-    "daccode": "45"
+    "daccode": "45",
+    "cctld": "mt",
+    "gwcode": "338"
   },
   {
     "name_short": "Marshall Islands",
@@ -6624,7 +6904,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "859"
+    "daccode": "859",
+    "cctld": "mh",
+    "gwcode": "983"
   },
   {
     "name_short": "Martinique",
@@ -6671,7 +6953,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "mq",
+    "gwcode": ""
   },
   {
     "name_short": "Mauritania",
@@ -6718,7 +7002,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "256"
+    "daccode": "256",
+    "cctld": "mr",
+    "gwcode": "435"
   },
   {
     "name_short": "Mauritius",
@@ -6765,7 +7051,9 @@
     "g7": "",
     "g20": "",
     "iea": "Mauritius",
-    "daccode": "257"
+    "daccode": "257",
+    "cctld": "mu",
+    "gwcode": "590"
   },
   {
     "name_short": "Mayotte",
@@ -6812,7 +7100,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "yt",
+    "gwcode": ""
   },
   {
     "name_short": "Mexico",
@@ -6859,7 +7149,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Mexico",
-    "daccode": "358"
+    "daccode": "358",
+    "cctld": "mx",
+    "gwcode": "70"
   },
   {
     "name_short": "Micronesia, Fed. Sts.",
@@ -6906,7 +7198,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "860"
+    "daccode": "860",
+    "cctld": "fm",
+    "gwcode": "987"
   },
   {
     "name_short": "Moldova",
@@ -6953,7 +7247,9 @@
     "g7": "",
     "g20": "",
     "iea": "Republic of Moldova",
-    "daccode": "93"
+    "daccode": "93",
+    "cctld": "md",
+    "gwcode": "359"
   },
   {
     "name_short": "Monaco",
@@ -7000,7 +7296,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "mc",
+    "gwcode": "221"
   },
   {
     "name_short": "Mongolia",
@@ -7047,7 +7345,9 @@
     "g7": "",
     "g20": "",
     "iea": "Mongolia",
-    "daccode": "753"
+    "daccode": "753",
+    "cctld": "mn",
+    "gwcode": "712"
   },
   {
     "name_short": "Montenegro",
@@ -7094,7 +7394,9 @@
     "g7": "",
     "g20": "",
     "iea": "Montenegro",
-    "daccode": "65"
+    "daccode": "65",
+    "cctld": "me",
+    "gwcode": "341"
   },
   {
     "name_short": "Montserrat",
@@ -7141,7 +7443,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": "385"
+    "daccode": "385",
+    "cctld": "ms",
+    "gwcode": ""
   },
   {
     "name_short": "Morocco",
@@ -7188,7 +7492,9 @@
     "g7": "",
     "g20": "",
     "iea": "Morocco",
-    "daccode": "136"
+    "daccode": "136",
+    "cctld": "ma",
+    "gwcode": "600"
   },
   {
     "name_short": "Mozambique",
@@ -7235,7 +7541,9 @@
     "g7": "",
     "g20": "",
     "iea": "Mozambique",
-    "daccode": "259"
+    "daccode": "259",
+    "cctld": "mz",
+    "gwcode": "541"
   },
   {
     "name_short": "Myanmar",
@@ -7282,7 +7590,9 @@
     "g7": "",
     "g20": "",
     "iea": "Myanmar",
-    "daccode": "635"
+    "daccode": "635",
+    "cctld": "mm",
+    "gwcode": "775"
   },
   {
     "name_short": "Namibia",
@@ -7329,7 +7639,9 @@
     "g7": "",
     "g20": "",
     "iea": "Namibia",
-    "daccode": "275"
+    "daccode": "275",
+    "cctld": "na",
+    "gwcode": "565"
   },
   {
     "name_short": "Nauru",
@@ -7376,7 +7688,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "845"
+    "daccode": "845",
+    "cctld": "nr",
+    "gwcode": "971"
   },
   {
     "name_short": "Nepal",
@@ -7423,7 +7737,9 @@
     "g7": "",
     "g20": "",
     "iea": "Nepal",
-    "daccode": "660"
+    "daccode": "660",
+    "cctld": "np",
+    "gwcode": "790"
   },
   {
     "name_short": "Netherlands",
@@ -7470,7 +7786,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Netherlands",
-    "daccode": "7"
+    "daccode": "7",
+    "cctld": "nl",
+    "gwcode": "210"
   },
   {
     "name_short": "Netherlands Antilles",
@@ -7517,7 +7835,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "New Caledonia",
@@ -7564,7 +7884,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "nc",
+    "gwcode": ""
   },
   {
     "name_short": "New Zealand",
@@ -7611,7 +7933,9 @@
     "g7": "",
     "g20": "",
     "iea": "New Zealand",
-    "daccode": "820"
+    "daccode": "820",
+    "cctld": "nz",
+    "gwcode": "920"
   },
   {
     "name_short": "Nicaragua",
@@ -7658,7 +7982,9 @@
     "g7": "",
     "g20": "",
     "iea": "Nicaragua",
-    "daccode": "364"
+    "daccode": "364",
+    "cctld": "ni",
+    "gwcode": "93"
   },
   {
     "name_short": "Niger",
@@ -7705,7 +8031,9 @@
     "g7": "",
     "g20": "",
     "iea": "Niger",
-    "daccode": "260"
+    "daccode": "260",
+    "cctld": "ne",
+    "gwcode": "436"
   },
   {
     "name_short": "Nigeria",
@@ -7752,7 +8080,9 @@
     "g7": "",
     "g20": "",
     "iea": "Nigeria",
-    "daccode": "261"
+    "daccode": "261",
+    "cctld": "ng",
+    "gwcode": "475"
   },
   {
     "name_short": "Niue",
@@ -7799,7 +8129,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "856"
+    "daccode": "856",
+    "cctld": "nu",
+    "gwcode": ""
   },
   {
     "name_short": "Norfolk Island",
@@ -7846,7 +8178,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "nf",
+    "gwcode": ""
   },
   {
     "name_short": "North Korea",
@@ -7893,7 +8227,9 @@
     "g7": "",
     "g20": "",
     "iea": "Democratic People's Republic of Korea",
-    "daccode": "740"
+    "daccode": "740",
+    "cctld": "kp",
+    "gwcode": "731"
   },
   {
     "name_short": "Northern Mariana Islands",
@@ -7940,7 +8276,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "mp",
+    "gwcode": ""
   },
   {
     "name_short": "Norway",
@@ -7987,7 +8325,9 @@
     "g7": "",
     "g20": "",
     "iea": "Norway",
-    "daccode": "8"
+    "daccode": "8",
+    "cctld": "no",
+    "gwcode": "385"
   },
   {
     "name_short": "Oman",
@@ -8034,7 +8374,9 @@
     "g7": "",
     "g20": "",
     "iea": "Oman",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "om",
+    "gwcode": "698"
   },
   {
     "name_short": "Pakistan",
@@ -8081,7 +8423,9 @@
     "g7": "",
     "g20": "",
     "iea": "Pakistan",
-    "daccode": "665"
+    "daccode": "665",
+    "cctld": "pk",
+    "gwcode": "770"
   },
   {
     "name_short": "Palau",
@@ -8128,7 +8472,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "861"
+    "daccode": "861",
+    "cctld": "pw",
+    "gwcode": "986"
   },
   {
     "name_short": "Palestine",
@@ -8175,7 +8521,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "550"
+    "daccode": "550",
+    "cctld": "ps",
+    "gwcode": ""
   },
   {
     "name_short": "Panama",
@@ -8222,7 +8570,9 @@
     "g7": "",
     "g20": "",
     "iea": "Panama",
-    "daccode": "366"
+    "daccode": "366",
+    "cctld": "pa",
+    "gwcode": "95"
   },
   {
     "name_short": "Papua New Guinea",
@@ -8269,7 +8619,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "862"
+    "daccode": "862",
+    "cctld": "pg",
+    "gwcode": "910"
   },
   {
     "name_short": "Paraguay",
@@ -8316,7 +8668,9 @@
     "g7": "",
     "g20": "",
     "iea": "Paraguay",
-    "daccode": "451"
+    "daccode": "451",
+    "cctld": "py",
+    "gwcode": "150"
   },
   {
     "name_short": "Peru",
@@ -8363,7 +8717,9 @@
     "g7": "",
     "g20": "",
     "iea": "Peru",
-    "daccode": "454"
+    "daccode": "454",
+    "cctld": "pe",
+    "gwcode": "135"
   },
   {
     "name_short": "Philippines",
@@ -8376,7 +8732,7 @@
     "faocode": "171",
     "gbdcode": "16",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -8410,7 +8766,9 @@
     "g7": "",
     "g20": "",
     "iea": "Philippines",
-    "daccode": "755"
+    "daccode": "755",
+    "cctld": "ph",
+    "gwcode": "840"
   },
   {
     "name_short": "Pitcairn",
@@ -8457,7 +8815,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "pn",
+    "gwcode": ""
   },
   {
     "name_short": "Poland",
@@ -8504,7 +8864,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Poland",
-    "daccode": "76"
+    "daccode": "76",
+    "cctld": "pl",
+    "gwcode": "290"
   },
   {
     "name_short": "Portugal",
@@ -8551,7 +8913,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Portugal",
-    "daccode": "9"
+    "daccode": "9",
+    "cctld": "pt",
+    "gwcode": "235"
   },
   {
     "name_short": "Puerto Rico",
@@ -8598,7 +8962,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "pr",
+    "gwcode": ""
   },
   {
     "name_short": "Qatar",
@@ -8645,7 +9011,9 @@
     "g7": "",
     "g20": "",
     "iea": "Qatar",
-    "daccode": "561"
+    "daccode": "561",
+    "cctld": "qa",
+    "gwcode": "694"
   },
   {
     "name_short": "Reunion",
@@ -8692,7 +9060,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "re",
+    "gwcode": ""
   },
   {
     "name_short": "Romania",
@@ -8739,7 +9109,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Romania",
-    "daccode": "77"
+    "daccode": "77",
+    "cctld": "ro",
+    "gwcode": "360"
   },
   {
     "name_short": "Russia",
@@ -8786,7 +9158,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Russian Federation",
-    "daccode": "87"
+    "daccode": "87",
+    "cctld": "ru",
+    "gwcode": "365"
   },
   {
     "name_short": "Rwanda",
@@ -8833,7 +9207,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "266"
+    "daccode": "266",
+    "cctld": "rw",
+    "gwcode": "517"
   },
   {
     "name_short": "Saint-Martin",
@@ -8880,7 +9256,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "Samoa",
@@ -8927,7 +9305,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "ws",
+    "gwcode": "990"
   },
   {
     "name_short": "San Marino",
@@ -8974,7 +9354,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "sm",
+    "gwcode": "331"
   },
   {
     "name_short": "Sao Tome and Principe",
@@ -9021,7 +9403,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "268"
+    "daccode": "268",
+    "cctld": "st",
+    "gwcode": "403"
   },
   {
     "name_short": "Saudi Arabia",
@@ -9068,7 +9452,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Saudi Arabia",
-    "daccode": "566"
+    "daccode": "566",
+    "cctld": "sa",
+    "gwcode": "670"
   },
   {
     "name_short": "Senegal",
@@ -9115,7 +9501,9 @@
     "g7": "",
     "g20": "",
     "iea": "Senegal",
-    "daccode": "269"
+    "daccode": "269",
+    "cctld": "sn",
+    "gwcode": "433"
   },
   {
     "name_short": "Serbia",
@@ -9162,7 +9550,9 @@
     "g7": "",
     "g20": "",
     "iea": "Serbia",
-    "daccode": "63"
+    "daccode": "63",
+    "cctld": "rs",
+    "gwcode": "340"
   },
   {
     "name_short": "Seychelles",
@@ -9209,7 +9599,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "sc",
+    "gwcode": "591"
   },
   {
     "name_short": "Sierra Leone",
@@ -9256,7 +9648,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "272"
+    "daccode": "272",
+    "cctld": "sl",
+    "gwcode": "451"
   },
   {
     "name_short": "Singapore",
@@ -9269,7 +9663,7 @@
     "faocode": "200",
     "gbdcode": "69",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -9303,7 +9697,9 @@
     "g7": "",
     "g20": "",
     "iea": "Singapore",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "sg",
+    "gwcode": "830"
   },
   {
     "name_short": "Sint Maarten",
@@ -9350,7 +9746,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "sx",
+    "gwcode": ""
   },
   {
     "name_short": "Slovakia",
@@ -9397,7 +9795,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Slovak Republic",
-    "daccode": "69"
+    "daccode": "69",
+    "cctld": "sk",
+    "gwcode": "317"
   },
   {
     "name_short": "Slovenia",
@@ -9444,7 +9844,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Slovenia",
-    "daccode": "61"
+    "daccode": "61",
+    "cctld": "si",
+    "gwcode": "349"
   },
   {
     "name_short": "Solomon Islands",
@@ -9491,7 +9893,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "866"
+    "daccode": "866",
+    "cctld": "sb",
+    "gwcode": "940"
   },
   {
     "name_short": "Somalia",
@@ -9538,7 +9942,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "273"
+    "daccode": "273",
+    "cctld": "so",
+    "gwcode": "520"
   },
   {
     "name_short": "South Africa",
@@ -9585,7 +9991,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "South Africa",
-    "daccode": "218"
+    "daccode": "218",
+    "cctld": "za",
+    "gwcode": "560"
   },
   {
     "name_short": "South Georgia and South Sandwich Is.",
@@ -9632,7 +10040,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "gs",
+    "gwcode": ""
   },
   {
     "name_short": "South Korea",
@@ -9679,7 +10089,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Korea",
-    "daccode": "742"
+    "daccode": "742",
+    "cctld": "kr",
+    "gwcode": "732"
   },
   {
     "name_short": "South Sudan",
@@ -9726,7 +10138,9 @@
     "g7": "",
     "g20": "",
     "iea": "South Sudan",
-    "daccode": "279"
+    "daccode": "279",
+    "cctld": "ss",
+    "gwcode": "626"
   },
   {
     "name_short": "Soviet Union (former)",
@@ -9773,7 +10187,9 @@
     "g7": "",
     "g20": "",
     "iea": "Former Soviet Union (if no detail)",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "su",
+    "gwcode": ""
   },
   {
     "name_short": "Spain",
@@ -9820,7 +10236,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Spain",
-    "daccode": "50"
+    "daccode": "50",
+    "cctld": "es",
+    "gwcode": "230"
   },
   {
     "name_short": "Sri Lanka",
@@ -9867,7 +10285,9 @@
     "g7": "",
     "g20": "",
     "iea": "Sri Lanka",
-    "daccode": "640"
+    "daccode": "640",
+    "cctld": "lk",
+    "gwcode": "780"
   },
   {
     "name_short": "St. Barths",
@@ -9914,7 +10334,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "St. Helena",
@@ -9961,7 +10383,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "276"
+    "daccode": "276",
+    "cctld": "sh",
+    "gwcode": ""
   },
   {
     "name_short": "St. Kitts and Nevis",
@@ -10008,7 +10432,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "kn",
+    "gwcode": "60"
   },
   {
     "name_short": "St. Lucia",
@@ -10055,7 +10481,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": "383"
+    "daccode": "383",
+    "cctld": "lc",
+    "gwcode": "56"
   },
   {
     "name_short": "St. Pierre and Miquelon",
@@ -10102,7 +10530,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "pm",
+    "gwcode": ""
   },
   {
     "name_short": "St. Vincent and the Grenadines",
@@ -10149,7 +10579,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": "384"
+    "daccode": "384",
+    "cctld": "vc",
+    "gwcode": "57"
   },
   {
     "name_short": "Sudan",
@@ -10196,7 +10628,9 @@
     "g7": "",
     "g20": "",
     "iea": "Sudan",
-    "daccode": "278"
+    "daccode": "278",
+    "cctld": "sd",
+    "gwcode": "625"
   },
   {
     "name_short": "Suriname",
@@ -10243,7 +10677,9 @@
     "g7": "",
     "g20": "",
     "iea": "Suriname",
-    "daccode": "457"
+    "daccode": "457",
+    "cctld": "sr",
+    "gwcode": "115"
   },
   {
     "name_short": "Svalbard and Jan Mayen Islands",
@@ -10290,7 +10726,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "Sweden",
@@ -10337,7 +10775,9 @@
     "g7": "",
     "g20": "G20",
     "iea": "Sweden",
-    "daccode": "10"
+    "daccode": "10",
+    "cctld": "se",
+    "gwcode": "380"
   },
   {
     "name_short": "Switzerland",
@@ -10370,7 +10810,7 @@
     "eu25": "",
     "eu15": "",
     "eu12": "",
-    "eea": "EEA",
+    "eea": "",
     "schengen": "Schengen",
     "euro": "",
     "un": "2002",
@@ -10384,7 +10824,9 @@
     "g7": "",
     "g20": "",
     "iea": "Switzerland",
-    "daccode": "11"
+    "daccode": "11",
+    "cctld": "ch",
+    "gwcode": "225"
   },
   {
     "name_short": "Syria",
@@ -10431,7 +10873,9 @@
     "g7": "",
     "g20": "",
     "iea": "Syrian Arab Republic",
-    "daccode": "573"
+    "daccode": "573",
+    "cctld": "sy",
+    "gwcode": "652"
   },
   {
     "name_short": "Taiwan",
@@ -10478,7 +10922,9 @@
     "g7": "",
     "g20": "",
     "iea": "Chinese Taipei",
-    "daccode": "732"
+    "daccode": "732",
+    "cctld": "tw",
+    "gwcode": "713"
   },
   {
     "name_short": "Tajikistan",
@@ -10525,7 +10971,9 @@
     "g7": "",
     "g20": "",
     "iea": "Tajikistan",
-    "daccode": "615"
+    "daccode": "615",
+    "cctld": "tj",
+    "gwcode": "702"
   },
   {
     "name_short": "Tanganjika",
@@ -10572,7 +11020,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "Tanzania",
@@ -10619,7 +11069,9 @@
     "g7": "",
     "g20": "",
     "iea": "United Republic of Tanzania",
-    "daccode": "282"
+    "daccode": "282",
+    "cctld": "tz",
+    "gwcode": "510"
   },
   {
     "name_short": "Thailand",
@@ -10632,7 +11084,7 @@
     "faocode": "216",
     "gbdcode": "18",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -10666,7 +11118,9 @@
     "g7": "",
     "g20": "",
     "iea": "Thailand",
-    "daccode": "764"
+    "daccode": "764",
+    "cctld": "th",
+    "gwcode": "800"
   },
   {
     "name_short": "Timor-Leste",
@@ -10679,7 +11133,7 @@
     "faocode": "176",
     "gbdcode": "19",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -10713,7 +11167,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "765"
+    "daccode": "765",
+    "cctld": "tl",
+    "gwcode": "860"
   },
   {
     "name_short": "Togo",
@@ -10760,7 +11216,9 @@
     "g7": "",
     "g20": "",
     "iea": "Togo",
-    "daccode": "283"
+    "daccode": "283",
+    "cctld": "tg",
+    "gwcode": "461"
   },
   {
     "name_short": "Tokelau",
@@ -10807,7 +11265,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "868"
+    "daccode": "868",
+    "cctld": "tk",
+    "gwcode": ""
   },
   {
     "name_short": "Tonga",
@@ -10854,7 +11314,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "870"
+    "daccode": "870",
+    "cctld": "to",
+    "gwcode": "972"
   },
   {
     "name_short": "Trinidad and Tobago",
@@ -10901,7 +11363,9 @@
     "g7": "",
     "g20": "",
     "iea": "Trinidad and Tobago",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "tt",
+    "gwcode": "52"
   },
   {
     "name_short": "Tunisia",
@@ -10948,10 +11412,12 @@
     "g7": "",
     "g20": "",
     "iea": "Tunisia",
-    "daccode": "139"
+    "daccode": "139",
+    "cctld": "tn",
+    "gwcode": "616"
   },
   {
-    "name_short": "Turkey",
+    "name_short": "T\u00fcrkiye",
     "name_official": "Republic of T\u00fcrkiye",
     "regex": "t[\u00fc|u]rk[i|e]y",
     "iso2": "TR",
@@ -10994,8 +11460,10 @@
     "cis": "",
     "g7": "",
     "g20": "G20",
-    "iea": "Turkey",
-    "daccode": "55"
+    "iea": "T\u00fcrkiye",
+    "daccode": "55",
+    "cctld": "tr",
+    "gwcode": "640"
   },
   {
     "name_short": "Turkmenistan",
@@ -11042,7 +11510,9 @@
     "g7": "",
     "g20": "",
     "iea": "Turkmenistan",
-    "daccode": "616"
+    "daccode": "616",
+    "cctld": "tm",
+    "gwcode": "701"
   },
   {
     "name_short": "Turks and Caicos Islands",
@@ -11089,7 +11559,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "tc",
+    "gwcode": ""
   },
   {
     "name_short": "Tuvalu",
@@ -11136,7 +11608,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "872"
+    "daccode": "872",
+    "cctld": "tv",
+    "gwcode": "973"
   },
   {
     "name_short": "Uganda",
@@ -11183,7 +11657,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": "285"
+    "daccode": "285",
+    "cctld": "ug",
+    "gwcode": "500"
   },
   {
     "name_short": "Ukraine",
@@ -11230,7 +11706,9 @@
     "g7": "",
     "g20": "",
     "iea": "Ukraine",
-    "daccode": "85"
+    "daccode": "85",
+    "cctld": "ua",
+    "gwcode": "369"
   },
   {
     "name_short": "United Arab Emirates",
@@ -11277,7 +11755,9 @@
     "g7": "",
     "g20": "",
     "iea": "United Arab Emirates",
-    "daccode": "576"
+    "daccode": "576",
+    "cctld": "ae",
+    "gwcode": "696"
   },
   {
     "name_short": "United Kingdom",
@@ -11310,7 +11790,7 @@
     "eu25": "EU25",
     "eu15": "EU15",
     "eu12": "EU12",
-    "eea": "EEA",
+    "eea": "",
     "schengen": "",
     "euro": "",
     "un": "1945",
@@ -11324,7 +11804,9 @@
     "g7": "G7",
     "g20": "G20",
     "iea": "United Kingdom",
-    "daccode": "12"
+    "daccode": "12",
+    "cctld": "uk",
+    "gwcode": "200"
   },
   {
     "name_short": "United States",
@@ -11371,7 +11853,9 @@
     "g7": "G7",
     "g20": "G20",
     "iea": "United States",
-    "daccode": "302"
+    "daccode": "302",
+    "cctld": "us",
+    "gwcode": "2"
   },
   {
     "name_short": "United States Minor Outlying Islands",
@@ -11418,7 +11902,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "United States Virgin Islands",
@@ -11465,7 +11951,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Americas",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "vi",
+    "gwcode": ""
   },
   {
     "name_short": "Uruguay",
@@ -11512,7 +12000,9 @@
     "g7": "",
     "g20": "",
     "iea": "Uruguay",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "uy",
+    "gwcode": "165"
   },
   {
     "name_short": "Uzbekistan",
@@ -11559,7 +12049,9 @@
     "g7": "",
     "g20": "",
     "iea": "Uzbekistan",
-    "daccode": "617"
+    "daccode": "617",
+    "cctld": "uz",
+    "gwcode": "704"
   },
   {
     "name_short": "Vanuatu",
@@ -11606,7 +12098,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "854"
+    "daccode": "854",
+    "cctld": "vu",
+    "gwcode": "935"
   },
   {
     "name_short": "Vatican",
@@ -11653,7 +12147,9 @@
     "g7": "",
     "g20": "",
     "iea": "",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "va",
+    "gwcode": ""
   },
   {
     "name_short": "Venezuela",
@@ -11700,7 +12196,9 @@
     "g7": "",
     "g20": "",
     "iea": "Bolivarian Republic of Venezuela",
-    "daccode": "463"
+    "daccode": "463",
+    "cctld": "ve",
+    "gwcode": "101"
   },
   {
     "name_short": "Vietnam",
@@ -11713,7 +12211,7 @@
     "faocode": "237",
     "gbdcode": "20",
     "continent": "Asia",
-    "unregion": "South-Eastern Asia",
+    "unregion": "South-eastern Asia",
     "exio1": "WW",
     "exio2": "WA",
     "exio3": "WA",
@@ -11747,7 +12245,9 @@
     "g7": "",
     "g20": "",
     "iea": "Viet Nam",
-    "daccode": "769"
+    "daccode": "769",
+    "cctld": "vn",
+    "gwcode": "817"
   },
   {
     "name_short": "Wallis and Futuna Islands",
@@ -11794,7 +12294,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other non-OECD Asia",
-    "daccode": "876"
+    "daccode": "876",
+    "cctld": "wf",
+    "gwcode": ""
   },
   {
     "name_short": "Western Sahara",
@@ -11841,7 +12343,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "eh",
+    "gwcode": ""
   },
   {
     "name_short": "Yemen",
@@ -11888,7 +12392,9 @@
     "g7": "",
     "g20": "",
     "iea": "Yemen",
-    "daccode": "580"
+    "daccode": "580",
+    "cctld": "ye",
+    "gwcode": "680"
   },
   {
     "name_short": "Zambia",
@@ -11935,7 +12441,9 @@
     "g7": "",
     "g20": "",
     "iea": "Zambia",
-    "daccode": "288"
+    "daccode": "288",
+    "cctld": "zm",
+    "gwcode": "551"
   },
   {
     "name_short": "Zanzibar",
@@ -11982,7 +12490,9 @@
     "g7": "",
     "g20": "",
     "iea": "Other Africa",
-    "daccode": ""
+    "daccode": "",
+    "cctld": "",
+    "gwcode": ""
   },
   {
     "name_short": "Zimbabwe",
@@ -12029,6 +12539,8 @@
     "g7": "",
     "g20": "",
     "iea": "Zimbabwe",
-    "daccode": "265"
+    "daccode": "265",
+    "cctld": "zw",
+    "gwcode": "552"
   }
 ]

@@ -4,8 +4,12 @@ import importlib.resources
 import json
 import re
 import sys
+from typing import TYPE_CHECKING, Any, Dict, Optional
 
 from . import __project_name__
+
+if TYPE_CHECKING:
+    from re import Pattern
 
 
 def _lazy_load_countries(func):
@@ -81,7 +85,9 @@ class CountryData:
         return tuple(country['name_short'] for country in self._countries)
 
     @_lazy_load_countries
-    def _find_country(self, string):
+    def _find_country(self, string: str, regex_map: Optional[Dict[str, "Pattern"]] = None):
+        regex_map = regex_map if regex_map is not None else {}
+
         # ISO 3166-1 alpha-2
         if len(string) == 2:
             info = self._find_country_by_code(string, self.codes_iso2)
@@ -96,7 +102,7 @@ class CountryData:
 
         # Regular expression
         for info in self._countries:
-            if info['regex'].search(string):
+            if regex_map.get(info['name_short'], info['regex']).search(string):
                 return info
 
         # Fuzzy country name
@@ -115,7 +121,12 @@ class CountryData:
         else:
             return self._countries[index]
 
-    def get(self, country, default=None):
+    def get(
+        self,
+        country: str,
+        regex_map: Optional[Dict[str, "Pattern"]] = None,
+        default: Optional[Any] = None
+    ):
         """
         Return country data as :class:`dict`
 
@@ -128,8 +139,13 @@ class CountryData:
             :func:`difflib.get_close_matches` is used for fuzzy matching.
 
         :param default: Default return value if `country` is not found
+        :param regex_map: A map where the keys are the name of the country
+            (should be equal to `name_short` in the json file) and the values are a
+            regex `Pattern` that will substitute the regex in the json file.
+            It's useful when you don't want to persist your own json file and want
+            to change just a few regex patterns.
         """
-        info = self._find_country(country)
+        info = self._find_country(country, regex_map=regex_map)
         if info:
             return info
         else:

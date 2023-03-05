@@ -9,18 +9,11 @@ if TYPE_CHECKING:
 _countrydata = None
 
 
-def guess_country(
-    country,
-    regex_map: Optional[Dict[str, "Pattern"]] = None,
-    attribute: Optional[str] = None,
-    default: Optional[str] = None
-):
+def guess_country(country, attribute=None, default=None, regex_map=None):
     """
-    :param regex_map: A map where the keys are the name of the country
-        (should be equal to `name_short` in the json file) and the values are a
-        regex `Pattern` that will substitute the regex in the json file.
-        It's useful when you don't want to persist your own json file and want
-        to change just a few regex patterns.
+    Use built-in country data to identify `country`
+
+    See :meth:`.CountryData.get` for more information.
     """
     global _countrydata
     if _countrydata is None:

@@ -236,6 +236,25 @@ def test_CountryData_find_country(string, exp_info_index, mocker):
 
 
 @pytest.mark.parametrize(
+    argnames='regex_map, exp_exception',
+    argvalues=(
+        (['a', 'b'], RuntimeError("Not a dict-like object: ['a', 'b']")),
+        ({'a': 'b'}, RuntimeError("Not a ISO 3166-1 alpha-2 country code: 'a'")),
+        ({'TV': 'b'}, RuntimeError("Not a regular expression (see re.compile()): 'b'")),
+        ({'TV': re.compile('toovaloodldoo')}, None),
+    ),
+    ids=lambda v: repr(v),
+)
+def test_CountryData_validate_regex_map(regex_map, exp_exception):
+    countrydata = _countrydata.CountryData()
+    if isinstance(exp_exception, Exception):
+        with pytest.raises(type(exp_exception), match=rf'^{re.escape(str(exp_exception))}$'):
+            countrydata._validate_regex_map(regex_map)
+    else:
+        countrydata._validate_regex_map(regex_map)
+
+
+@pytest.mark.parametrize(
     argnames='country, default, find_country, exp_return_value',
     argvalues=(
         ('foo', None, Mock(return_value={'iso2': 'FO'}), {'iso2': 'FO'}),

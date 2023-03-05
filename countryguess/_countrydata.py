@@ -113,6 +113,17 @@ class CountryData:
                 index = names.index(name)
                 return self._countries[index]
 
+    def _validate_regex_map(self, regex_map):
+        if not isinstance(regex_map, collections.abc.Mapping):
+            raise RuntimeError(f'Not a dict-like object: {regex_map!r}')
+
+        for iso2, regex in regex_map.items():
+            if iso2 not in self.codes_iso2:
+                raise RuntimeError(f'Not a ISO 3166-1 alpha-2 country code: {iso2!r}')
+
+            elif not isinstance(regex, re.Pattern):
+                raise RuntimeError(f'Not a regular expression (see re.compile()): {regex!r}')
+
     def _find_country_by_code(self, code, codes):
         try:
             index = codes.index(code.upper())

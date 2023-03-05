@@ -134,12 +134,7 @@ class CountryData:
         else:
             return self._countries[index]
 
-    def get(
-        self,
-        country: str,
-        regex_map: Optional[Dict[str, "Pattern"]] = None,
-        default: Optional[Any] = None
-    ):
+    def get(self, country, default=None, regex_map=None):
         """
         Return country data as :class:`dict`
 
@@ -152,11 +147,9 @@ class CountryData:
             :func:`difflib.get_close_matches` is used for fuzzy matching.
 
         :param default: Default return value if `country` is not found
-        :param regex_map: A map where the keys are the name of the country
-            (should be equal to `name_short` in the json file) and the values are a
-            regex `Pattern` that will substitute the regex in the json file.
-            It's useful when you don't want to persist your own json file and want
-            to change just a few regex patterns.
+        :param dict regex_map: Map ISO 3166-1 alpha-2 country codes
+            (:class:`str`) to regular expressions (:class:`re.Pattern`, see
+            :func:`re.compile`)
         """
         info = self._find_country(country, regex_map=regex_map)
         if info:

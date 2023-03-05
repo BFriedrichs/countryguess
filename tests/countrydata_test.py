@@ -369,10 +369,14 @@ def test_CountryData_validate_regex_map(regex_map, exp_exception):
     ids=lambda v: repr(v),
 )
 def test_CountryData_get(country, default, find_country, exp_return_value, mocker):
+    regex_map = Mock()
     mocker.patch('countryguess._countrydata.CountryData._find_country', find_country)
     countrydata = _countrydata.CountryData()
-    return_value = countrydata.get(country, default=default)
+    return_value = countrydata.get(country, default=default, regex_map=regex_map)
     assert return_value == exp_return_value
+    assert countrydata._find_country.call_args_list == [
+        call(country, regex_map=regex_map)
+    ]
 
 
 @pytest.mark.parametrize(

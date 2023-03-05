@@ -1,3 +1,4 @@
+import collections
 import difflib
 import functools
 import importlib.resources
@@ -81,7 +82,7 @@ class CountryData:
         return tuple(country['name_short'] for country in self._countries)
 
     @_lazy_load_countries
-    def _find_country(self, string):
+    def _find_country(self, string, regex_map=None):
         # ISO 3166-1 alpha-2
         if len(string) == 2:
             info = self._find_country_by_code(string, self.codes_iso2)
@@ -94,18 +95,36 @@ class CountryData:
             if info:
                 return info
 
-        # Regular expression
+        # Custom regular expressions
+        if regex_map:
+            self._validate_regex_map(regex_map)
+            for iso2, regex in regex_map.items():
+                if regex.search(string):
+                    return self._find_country_by_code(iso2, self.codes_iso2)
+
+        # Hardcoded regular expressions
         for info in self._countries:
             if info['regex'].search(string):
                 return info
 
         # Fuzzy country name
         for names in (self.names_official, self.names_short):
-            matches = difflib.get_close_matches(string, names, n=1, cutoff=0.7)
+            matches = difflib.get_close_matches(string, names, n=1, cutoff=0.8)
             if matches:
                 name = matches[0]
                 index = names.index(name)
                 return self._countries[index]
+
+    def _validate_regex_map(self, regex_map):
+        if not isinstance(regex_map, collections.abc.Mapping):
+            raise RuntimeError(f'Not a dict-like object: {regex_map!r}')
+
+        for iso2, regex in regex_map.items():
+            if iso2 not in self.codes_iso2:
+                raise RuntimeError(f'Not a ISO 3166-1 alpha-2 country code: {iso2!r}')
+
+            elif not isinstance(regex, re.Pattern):
+                raise RuntimeError(f'Not a regular expression (see re.compile()): {regex!r}')
 
     def _find_country_by_code(self, code, codes):
         try:
@@ -115,7 +134,7 @@ class CountryData:
         else:
             return self._countries[index]
 
-    def get(self, country, default=None):
+    def get(self, country, default=None, regex_map=None):
         """
         Return country data as :class:`dict`
 
@@ -128,8 +147,11 @@ class CountryData:
             :func:`difflib.get_close_matches` is used for fuzzy matching.
 
         :param default: Default return value if `country` is not found
+        :param dict regex_map: Map ISO 3166-1 alpha-2 country codes
+            (:class:`str`) to regular expressions (:class:`re.Pattern`, see
+            :func:`re.compile`)
         """
-        info = self._find_country(country)
+        info = self._find_country(country, regex_map=regex_map)
         if info:
             return info
         else:

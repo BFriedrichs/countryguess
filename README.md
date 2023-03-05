@@ -31,8 +31,22 @@ None
 'Taiwan'
 ```
 
+Matching by regular expression can be extended by mapping ISO2 codes to
+[`re.Pattern`](https://docs.python.org/3/library/re.html#re.compile) objects.
+
+```
+>>> regex_map = {
+...     "MN": re.compile(r'^mongol\s+uls$', flags=re.IGNORECASE),
+...     "JP": re.compile(r'^ni(?:pp|h)on', flags=re.IGNORECASE),
+... }
+>>> guess_country("Mongol Uls", attribute="name_short", regex_map=regex_map)
+Mongolia
+>>> guess_country("Nippon", attribute="name_short", regex_map=regex_map)
+Japan
+```
+
 You can also create a `CountryData` instance yourself to provide your own
-country data.
+country data in a JSON file.
 
 ```python
 >>> from countryguess import CountryData

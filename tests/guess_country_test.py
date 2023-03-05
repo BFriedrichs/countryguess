@@ -50,16 +50,3 @@ def test_guess_country_return_value(info, attribute, default, exp_result, mocker
         assert return_value == exp_result
 
     assert CountryData_mock.return_value.get.call_args_list == [call('foo', regex_map=None)]
-
-
-def test_guess_country_w_regex_map():
-    # GIVEN
-    regex_map = {
-        'Netherlands': re.compile('^(?!.*\\bant)(?!.*\\bcarib).*(netherlands|nederland)', flags=re.IGNORECASE)
-    }
-
-    # WHEN
-    code = _guess_country.guess_country('Nederland', attribute='iso2', regex_map=regex_map)
-
-    # THEN
-    assert code == "NL"

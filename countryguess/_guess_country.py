@@ -1,10 +1,4 @@
-from typing import TYPE_CHECKING, Dict, Optional
-
 from ._countrydata import CountryData
-
-if TYPE_CHECKING:
-    from re import Pattern
-
 
 _countrydata = None
 

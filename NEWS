@@ -1,4 +1,4 @@
-0.?.?
+0.3.0
   * guess_country() and CountryData.get() get a new regex_map argument
     (see README)
   * Updated metadata from upstream country converter

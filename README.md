@@ -1,13 +1,13 @@
-**countryguess** looks up country information by fuzzy name matching. It tries
-to be lean (but not mean) and fast: All dependencies are in the Python Standard
-Library and country data is loaded lazily on demand.
+**countryguess** looks up country information by country codes or name matching.
+It tries to be lean (but not mean) and fast: All dependencies are in the Python
+Standard Library and country data is loaded lazily on demand.
 
 Code: [Codeberg](https://codeberg.org/plotski/countryguess)  
 Package: [PyPI](https://pypi.org/project/countryguess)
 
 ### Usage
 
-`guess_country()` uses the default country data that is packaged.
+`guess_country()` uses the default country data that is already packaged.
 
 ```python
 >>> from countryguess import guess_country
@@ -31,18 +31,19 @@ None
 'Taiwan'
 ```
 
-Matching by regular expression can be extended by mapping ISO2 codes to
+Matching by regular expression can be extended by mapping
+[ISO2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes to
 [`re.Pattern`](https://docs.python.org/3/library/re.html#re.compile) objects.
 
-```
+```python
 >>> regex_map = {
 ...     "MN": re.compile(r'^mongol\s+uls$', flags=re.IGNORECASE),
 ...     "JP": re.compile(r'^ni(?:pp|h)on', flags=re.IGNORECASE),
 ... }
 >>> guess_country("Mongol Uls", attribute="name_short", regex_map=regex_map)
-Mongolia
+'Mongolia'
 >>> guess_country("Nippon", attribute="name_short", regex_map=regex_map)
-Japan
+'Japan'
 ```
 
 You can also create a `CountryData` instance yourself to provide your own

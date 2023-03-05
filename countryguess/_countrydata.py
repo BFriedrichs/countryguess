@@ -109,7 +109,7 @@ class CountryData:
 
         # Fuzzy country name
         for names in (self.names_official, self.names_short):
-            matches = difflib.get_close_matches(string, names, n=1, cutoff=0.7)
+            matches = difflib.get_close_matches(string, names, n=1, cutoff=0.8)
             if matches:
                 name = matches[0]
                 index = names.index(name)

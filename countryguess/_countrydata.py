@@ -1,15 +1,12 @@
+import collections
 import difflib
 import functools
 import importlib.resources
 import json
 import re
 import sys
-from typing import TYPE_CHECKING, Any, Dict, Optional
 
 from . import __project_name__
-
-if TYPE_CHECKING:
-    from re import Pattern
 
 
 def _lazy_load_countries(func):
@@ -85,9 +82,7 @@ class CountryData:
         return tuple(country['name_short'] for country in self._countries)
 
     @_lazy_load_countries
-    def _find_country(self, string: str, regex_map: Optional[Dict[str, "Pattern"]] = None):
-        regex_map = regex_map if regex_map is not None else {}
-
+    def _find_country(self, string, regex_map=None):
         # ISO 3166-1 alpha-2
         if len(string) == 2:
             info = self._find_country_by_code(string, self.codes_iso2)
@@ -100,9 +95,16 @@ class CountryData:
             if info:
                 return info
 
-        # Regular expression
+        # Custom regular expressions
+        if regex_map:
+            self._validate_regex_map(regex_map)
+            for iso2, regex in regex_map.items():
+                if regex.search(string):
+                    return self._find_country_by_code(iso2, self.codes_iso2)
+
+        # Hardcoded regular expressions
         for info in self._countries:
-            if regex_map.get(info['name_short'], info['regex']).search(string):
+            if info['regex'].search(string):
                 return info
 
         # Fuzzy country name

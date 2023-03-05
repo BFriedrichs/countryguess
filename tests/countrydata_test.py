@@ -167,22 +167,130 @@ def test_CountryData_property(property_name, exp_value, tmp_path):
         assert value is getattr(countrydata, property_name)
 
 
+@pytest.fixture
+def find_country_countries():
+    return [
+        {
+            'iso2': 'AB',
+            'iso3': 'ABC',
+            'name_short': 'Foolala',
+            'name_official': 'Fooland',
+            'regex': re.compile('^fo+lala$', flags=re.IGNORECASE),
+        },
+        {
+            'iso2': 'DE',
+            'iso3': 'DEF',
+            'name_short': 'Baristan',
+            'name_official': 'Republic of Baristan',
+            'regex': re.compile('^bah?ristan$', flags=re.IGNORECASE),
+        },
+        {
+            'iso2': 'GH',
+            'iso3': 'GHI',
+            'name_short': 'Bazvia',
+            'name_official': 'Bazvian Kingdom',
+            'regex': re.compile('^ba[zs]via$', flags=re.IGNORECASE),
+        },
+    ]
+
 @pytest.mark.parametrize(
     argnames='string, exp_info_index',
     argvalues=(
-        # ISO2
         ('ab', 0),
-        ('dE', 1),
+        ('De', 1),
         ('GH', 2),
         ('xy', None),
+    ),
+    ids=lambda v: repr(v),
+)
+def test_CountryData_find_country_by_iso2(string, exp_info_index, find_country_countries):
+    countrydata = _countrydata.CountryData()
+    countrydata._countries = find_country_countries
+    info = countrydata._find_country(string)
+    if exp_info_index is None:
+        assert info is None
+    else:
+        info_index = countrydata._countries.index(info)
+        assert info_index == exp_info_index
 
-        # ISO3
-        ('ABC', 0),
-        ('Def', 1),
-        ('ghi', 2),
+@pytest.mark.parametrize(
+    argnames='string, exp_info_index',
+    argvalues=(
+        ('abc', 0),
+        ('DeF', 1),
+        ('GHI', 2),
         ('xyz', None),
+    ),
+    ids=lambda v: repr(v),
+)
+def test_CountryData_find_country_by_iso3(string, exp_info_index, find_country_countries):
+    countrydata = _countrydata.CountryData()
+    countrydata._countries = find_country_countries
+    info = countrydata._find_country(string)
+    if exp_info_index is None:
+        assert info is None
+    else:
+        info_index = countrydata._countries.index(info)
+        assert info_index == exp_info_index
 
-        # Regex
+@pytest.mark.parametrize(
+    argnames='string, regex_map, exp_info_index',
+    argvalues=(
+        (
+            'aaaaaabbbbbb',
+            {
+                'ab': re.compile(r'^a+b+$'),
+                'de': re.compile(r'^dee?EEE?fff?$'),
+                'gh': re.compile(r'^.*$'),
+            },
+            0,
+        ),
+        (
+            'deEEEff',
+            {
+                'ab': re.compile(r'^a+b+$'),
+                'de': re.compile(r'^dee?EEE?fff?$'),
+                'gh': re.compile(r'^.*$'),
+            },
+            1,
+        ),
+        (
+            'anything',
+            {
+                'ab': re.compile(r'^a+b+$'),
+                'de': re.compile(r'^dee?EEE?fff?$'),
+                'gh': re.compile(r'^[a-z]+$'),
+            },
+            2,
+        ),
+        (
+            '123',
+            {
+                'ab': re.compile(r'^a+b+$'),
+                'de': re.compile(r'^dee?EEE?fff?$'),
+                'gh': re.compile(r'^[a-z]+$'),
+            },
+            None,
+        ),
+    ),
+    ids=lambda v: repr(v),
+)
+def test_CountryData_find_country_by_custom_regex(string, regex_map, exp_info_index, find_country_countries, mocker):
+    countrydata = _countrydata.CountryData()
+    mocker.patch.object(countrydata, '_validate_regex_map')
+    countrydata._countries = find_country_countries
+    info = countrydata._find_country(string, regex_map=regex_map)
+    if exp_info_index is None:
+        assert info is None
+    else:
+        info_index = countrydata._countries.index(info)
+        assert info_index == exp_info_index
+
+    assert countrydata._validate_regex_map.call_args_list == [call(regex_map)]
+
+@pytest.mark.parametrize(
+    argnames='string, exp_info_index',
+    argvalues=(
         ('FOOlala', 0),
         ('foooolala', 0),
         ('fOOOooolala', 0),
@@ -194,45 +302,41 @@ def test_CountryData_property(property_name, exp_value, tmp_path):
         ('baZvia', 2),
         ('Basvia', 2),
         ('BASvia', 2),
-
-        # Fuzzy
-        ('foolalu', 0),
-        ('BARistan', 1),
-        ('bAsvian kingdom', 2),
-        ('adsf', None),
+        ('this should not match any country', None),
     ),
     ids=lambda v: repr(v),
 )
-def test_CountryData_find_country(string, exp_info_index, mocker):
+def test_CountryData_find_country_by_hardcoded_regex(string, exp_info_index, find_country_countries):
     countrydata = _countrydata.CountryData()
-    countrydata._countries = [
-        {
-            'iso3': 'ABC',
-            'iso2': 'AB',
-            'name_short': 'Foolala',
-            'name_official': 'Fooland',
-            'regex': re.compile('^fo+lala$', flags=re.IGNORECASE),
-        },
-        {
-            'iso3': 'DEF',
-            'iso2': 'DE',
-            'name_short': 'Baristan',
-            'name_official': 'Republic of Baristan',
-            'regex': re.compile('^bah?ristan$', flags=re.IGNORECASE),
-        },
-        {
-            'iso3': 'GHI',
-            'iso2': 'GH',
-            'name_short': 'Bazvia',
-            'name_official': 'Bazvian Kingdom',
-            'regex': re.compile('^ba[zs]via$', flags=re.IGNORECASE),
-        },
-    ]
+    countrydata._countries = find_country_countries
     info = countrydata._find_country(string)
     if exp_info_index is None:
         assert info is None
     else:
-        assert countrydata._countries.index(info) == exp_info_index
+        info_index = countrydata._countries.index(info)
+        assert info_index == exp_info_index
+
+@pytest.mark.parametrize(
+    argnames='string, exp_info_index',
+    argvalues=(
+        ('Foolalu', 0),
+        ('Foolalulala', None),
+        ('Brepublic bof Baristan', 1),
+        ('Brepublic bof Baristanianism', None),
+        ('Basvian Kingdork', 2),
+        ('Basvian Queendom', None),
+    ),
+    ids=lambda v: repr(v),
+)
+def test_CountryData_find_country_by_fuzzy_match(string, exp_info_index, find_country_countries):
+    countrydata = _countrydata.CountryData()
+    countrydata._countries = find_country_countries
+    info = countrydata._find_country(string)
+    if exp_info_index is None:
+        assert info is None
+    else:
+        info_index = countrydata._countries.index(info)
+        assert info_index == exp_info_index
 
 
 @pytest.mark.parametrize(

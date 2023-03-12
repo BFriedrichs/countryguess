@@ -286,7 +286,10 @@ def test_CountryData_find_country_by_custom_regex(string, regex_map, exp_info_in
         info_index = countrydata._countries.index(info)
         assert info_index == exp_info_index
 
-    assert countrydata._validate_regex_map.call_args_list == [call(regex_map)]
+    if exp_info_index is not None:
+        assert countrydata._validate_regex_map.call_args_list == []
+    else:
+        assert countrydata._validate_regex_map.call_args_list == [call(regex_map)]
 
 @pytest.mark.parametrize(
     argnames='string, exp_info_index',

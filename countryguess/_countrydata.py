@@ -97,10 +97,12 @@ class CountryData:
 
         # Custom regular expressions
         if regex_map:
-            self._validate_regex_map(regex_map)
             for iso2, regex in regex_map.items():
                 if regex.search(string):
                     return self._find_country_by_code(iso2, self.codes_iso2)
+            # Because validation is expensive, we only do it if we couldn't find
+            # a match
+            self._validate_regex_map(regex_map)
 
         # Hardcoded regular expressions
         for info in self._countries:
